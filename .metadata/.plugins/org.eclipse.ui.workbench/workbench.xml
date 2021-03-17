@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<workbench progressCount="55" version="2.0">
+<workbench progressCount="45" version="2.0">
 <workbenchAdvisor/>
 <window height="768" maximized="true" width="1024" x="160" y="160">
 <fastViewData fastViewLocation="1024">
@@ -22,7 +22,7 @@
 <coolItem id="group.nav" itemType="typeGroupMarker"/>
 <coolItem id="org.eclipse.ui.workbench.navigate" itemType="typeToolBarContribution" x="206" y="22"/>
 <coolItem id="group.editor" itemType="typeGroupMarker"/>
-<coolItem id="com.ti.common.ui.cmdFileEditor" itemType="typeToolBarContribution" x="-1" y="-1"/>
+<coolItem id="com.ti.common.ui.cmdFileEditor" itemType="typePlaceholder" x="-1" y="-1"/>
 <coolItem id="org.eclipse.cdt.ui.editor.CEditor" itemType="typePlaceholder" x="-1" y="-1"/>
 <coolItem id="com.ti.ccstudio.system.setup.editor.editors.MultiPageXMLEditor" itemType="typeToolBarContribution" x="-1" y="-1"/>
 <coolItem id="group.help" itemType="typeGroupMarker"/>
@@ -33,15 +33,10 @@
 <editorArea activeWorkbook="DefaultEditorWorkbook">
 <info part="DefaultEditorWorkbook">
 <folder appearance="1" expanded="2">
-<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
-<part id="0"/>
-</presentation>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory"/>
 </folder>
 </info>
 </editorArea>
-<editor focus="true" id="com.ti.common.ui.cmdFileEditor" name="lnkx.cmd" partName="lnkx.cmd" path="E:/Projects/FYP/CodeComposer/BlinkingLED/lnkx.cmd" title="lnkx.cmd" tooltip="BlinkingLED/lnkx.cmd" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/BlinkingLED/lnkx.cmd"/>
-</editor>
 </editors>
 <views>
 <view id="com.ti.ccstudio.debug.registers.ui.Expressions" partName="Watch (1)">
@@ -60,7 +55,6 @@
 </view>
 <view id="org.eclipse.cdt.ui.CView" partName="C/C++ Projects">
 <viewState horizontalPosition="0" verticalPosition="0">
-<expanded/>
 <customFilters userDefinedPatternsEnabled="false">
 <xmlDefinedFilters>
 <child filterId="org.eclipse.cdt.internal.ui.CView.ArchiveFilter" isEnabled="false"/>
@@ -88,7 +82,7 @@
 <viewState/>
 </view>
 <view id="org.eclipse.ui.views.ProblemView" partName="Problems">
-<viewState columnWidth0="680" columnWidth1="81" columnWidth2="156" columnWidth3="66" columnWidth4="0" horizontalPosition="0" verticalPosition="0">
+<viewState columnWidth0="683" columnWidth1="84" columnWidth2="159" columnWidth3="69" columnWidth4="0" horizontalPosition="0" verticalPosition="0">
 <columnOrder columnOrderIndex="0"/>
 <columnOrder columnOrderIndex="1"/>
 <columnOrder columnOrderIndex="2"/>
@@ -280,37 +274,26 @@
 <view id="org.eclipse.ui.views.ProblemView"/>
 <view id="com.ti.ccstudio.debug.ui.TIDisassemblyView"/>
 <view id="org.eclipse.ui.console.ConsoleView"/>
-<fastViews>
-<view id="org.eclipse.cdt.ui.CView" ratio="0.3"/>
+<fastViews>&#x0A;<view id="org.eclipse.cdt.ui.CView" ratio="0.3"/>
 <view id="com.ti.ccstudio.system.setup.ui.views.TargetConfigurationView" ratio="0.027225131"/>
 </fastViews>
-<layout>
-<mainWindow>
-<info folder="true" part="org.eclipse.debug.internal.ui.NavigatorFolderView">
-<folder activePageID="org.eclipse.debug.ui.DebugView" appearance="2" expanded="2">
-<page content="org.eclipse.debug.ui.DebugView" label="Debug"/>
+<layout>&#x0A;<mainWindow>&#x0A;<info folder="true" part="org.eclipse.debug.internal.ui.NavigatorFolderView">&#x0A;<folder activePageID="org.eclipse.debug.ui.DebugView" appearance="2" expanded="2">&#x0A;<page content="org.eclipse.debug.ui.DebugView" label="Debug"/>
 <page content="org.eclipse.ui.views.ResourceNavigator" label="LabelNotFound"/>
-<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
-<part id="0"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">&#x0A;<part id="0"/>
 </presentation>
 </folder>
 </info>
-<info folder="true" part="org.eclipse.ui.internal.ViewStack@f5321e" ratio="0.785527" ratioLeft="1498" ratioRight="409" relationship="2" relative="org.eclipse.debug.internal.ui.NavigatorFolderView">
-<folder activePageID="org.eclipse.ui.cheatsheets.views.CheatSheetView" appearance="2" expanded="2">
-<page content="org.eclipse.help.ui.HelpView" label="LabelNotFound"/>
+<info folder="true" part="org.eclipse.ui.internal.ViewStack@f5321e" ratio="0.785527" ratioLeft="1498" ratioRight="409" relationship="2" relative="org.eclipse.debug.internal.ui.NavigatorFolderView">&#x0A;<folder activePageID="org.eclipse.ui.cheatsheets.views.CheatSheetView" appearance="2" expanded="2">&#x0A;<page content="org.eclipse.help.ui.HelpView" label="LabelNotFound"/>
 <page content="org.eclipse.ui.internal.introview" label="LabelNotFound"/>
 <page content="org.eclipse.ui.cheatsheets.views.CheatSheetView" label="Cheat Sheets"/>
 <page content="com.ti.ccstudio.profile.views.ConfigurationsView" label="LabelNotFound"/>
 <page content="org.eclipse.ui.views.ProblemView" label="Problems"/>
-<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
-<part id="0"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">&#x0A;<part id="0"/>
 <part id="1"/>
 </presentation>
 </folder>
 </info>
-<info folder="true" part="org.eclipse.ui.internal.ViewStack@17d353f" ratio="0.7491785" ratioLeft="684" ratioRight="229" relationship="4" relative="org.eclipse.debug.internal.ui.NavigatorFolderView">
-<folder activePageID="org.eclipse.ui.console.ConsoleView" appearance="2" expanded="2">
-<page content="org.eclipse.ui.console.ConsoleView" label="Console"/>
+<info folder="true" part="org.eclipse.ui.internal.ViewStack@17d353f" ratio="0.7491785" ratioLeft="684" ratioRight="229" relationship="4" relative="org.eclipse.debug.internal.ui.NavigatorFolderView">&#x0A;<folder activePageID="org.eclipse.ui.console.ConsoleView" appearance="2" expanded="2">&#x0A;<page content="org.eclipse.ui.console.ConsoleView" label="Console"/>
 <page content="org.eclipse.ui.views.BookmarkView" label="LabelNotFound"/>
 <page content="org.eclipse.ui.views.PropertySheet" label="LabelNotFound"/>
 <page content="com.ti.dvt.ui.views.line:SingleTime*" label="LabelNotFound"/>
@@ -318,37 +301,28 @@
 <page content="com.ti.dvt.ui.views.line:Real*" label="LabelNotFound"/>
 <page content="com.ti.dvt.ui.views.line:Magnitude*" label="LabelNotFound"/>
 <page content="com.ti.dvt.ui.views.line:MagnitudeOnly*" label="LabelNotFound"/>
-<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
-<part id="0"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">&#x0A;<part id="0"/>
 </presentation>
 </folder>
 </info>
 <info part="org.eclipse.ui.editorss" ratio="0.45870206" ratioLeft="311" ratioRight="367" relationship="4" relative="org.eclipse.debug.internal.ui.NavigatorFolderView"/>
-<info folder="true" part="org.eclipse.ui.internal.ViewStack@14b50c7" ratio="0.7497382" ratioLeft="1432" ratioRight="478" relationship="2" relative="org.eclipse.ui.editorss">
-<folder activePageID="com.ti.ccstudio.debug.ui.TIDisassemblyView" appearance="2" expanded="2">
-<page content="com.ti.ccstudio.debug.ui.TIDisassemblyView" label="Disassembly (C$$EXIT)"/>
+<info folder="true" part="org.eclipse.ui.internal.ViewStack@14b50c7" ratio="0.7497382" ratioLeft="1432" ratioRight="478" relationship="2" relative="org.eclipse.ui.editorss">&#x0A;<folder activePageID="com.ti.ccstudio.debug.ui.TIDisassemblyView" appearance="2" expanded="2">&#x0A;<page content="com.ti.ccstudio.debug.ui.TIDisassemblyView" label="Disassembly (C$$EXIT)"/>
 <page content="com.ti.ccstudio.memory.ui.view.TIMemoryView" label="LabelNotFound"/>
 <page content="org.eclipse.ui.views.ContentOutline" label="LabelNotFound"/>
 <page content="com.ti.ccstudio.debug.ui.views.KernelObjects" label="LabelNotFound"/>
-<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
-<part id="0"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">&#x0A;<part id="0"/>
 </presentation>
 </folder>
 </info>
-<info folder="true" part="org.eclipse.debug.internal.ui.ToolsFolderView" ratio="0.5" ratioLeft="955" ratioRight="955" relationship="2" relative="org.eclipse.debug.internal.ui.NavigatorFolderView">
-<folder activePageID="com.ti.ccstudio.debug.registers.ui.Variables" appearance="2" expanded="2">
-<page content="com.ti.ccstudio.debug.registers.ui.Variables" label="Local (1)"/>
+<info folder="true" part="org.eclipse.debug.internal.ui.ToolsFolderView" ratio="0.5" ratioLeft="955" ratioRight="955" relationship="2" relative="org.eclipse.debug.internal.ui.NavigatorFolderView">&#x0A;<folder activePageID="com.ti.ccstudio.debug.registers.ui.Variables" appearance="2" expanded="2">&#x0A;<page content="com.ti.ccstudio.debug.registers.ui.Variables" label="Local (1)"/>
 <page content="com.ti.ccstudio.debug.registers.ui.Expressions" label="Watch (1)"/>
 <page content="com.ti.ccstudio.debug.registers.ui.Registers" label="LabelNotFound"/>
-<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
-<part id="0"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">&#x0A;<part id="0"/>
 <part id="1"/>
 </presentation>
 </folder>
 </info>
-<info folder="true" part="org.eclipse.debug.internal.ui.BreakpointFolderView" ratio="0.49947643" ratioLeft="477" ratioRight="478" relationship="2" relative="org.eclipse.debug.internal.ui.ToolsFolderView">
-<folder appearance="2" expanded="2">
-<page content="org.eclipse.debug.ui.BreakpointView" label="LabelNotFound"/>
+<info folder="true" part="org.eclipse.debug.internal.ui.BreakpointFolderView" ratio="0.49947643" ratioLeft="477" ratioRight="478" relationship="2" relative="org.eclipse.debug.internal.ui.ToolsFolderView">&#x0A;<folder appearance="2" expanded="2">&#x0A;<page content="org.eclipse.debug.ui.BreakpointView" label="LabelNotFound"/>
 </folder>
 </info>
 </mainWindow>
@@ -372,6 +346,11 @@
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/FFT/tms320.h"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/FFT/conf.h"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/FFT/dsplib.h"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.ti.common.ui.cmdFileEditor" path="/BlinkingLED/lnkx.cmd"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.ti.common.ui.cmdFileEditor" path="/AudioPlayback/lnkx.cmd"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/AudioPlayback/aic3204_test.c"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/AudioPlayback/main.c"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/AudioPlayback/audio_playback.c"/>
 </editors>
 <item historyLabel="blink_led.c" index="0">
 <position/>
@@ -430,8 +409,29 @@
 <item historyLabel="tms320.h" index="11">
 <position info="not_deleted" x="3330" y="0"/>
 </item>
-<item active="true" historyLabel="main.c" index="10">
+<item historyLabel="main.c" index="10">
 <position info="not_deleted" x="1185" y="0"/>
+</item>
+<item historyLabel="lnkx.cmd" index="14">
+<position/>
+</item>
+<item historyLabel="lnkx.cmd" index="15">
+<position/>
+</item>
+<item historyLabel="aic3204_test.c" index="16">
+<position/>
+</item>
+<item historyLabel="main.c" index="17">
+<position/>
+</item>
+<item historyLabel="audio_playback.c" index="18">
+<position/>
+</item>
+<item historyLabel="aic3204_test.c" index="16">
+<position info="not_deleted" x="4111" y="0"/>
+</item>
+<item active="true" historyLabel="audio_playback.c" index="18">
+<position info="not_deleted" x="4274" y="0"/>
 </item>
 </navigationHistory>
 <stickyState>
@@ -460,6 +460,18 @@
 </trimLayout>
 </window>
 <mruList>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="audio_playback.c" tooltip="AudioPlayback/audio_playback.c">
+<persistable path="/AudioPlayback/audio_playback.c"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="main.c" tooltip="AudioPlayback/main.c">
+<persistable path="/AudioPlayback/main.c"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="aic3204_test.c" tooltip="AudioPlayback/aic3204_test.c">
+<persistable path="/AudioPlayback/aic3204_test.c"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.ti.common.ui.cmdFileEditor" name="lnkx.cmd" tooltip="AudioPlayback/lnkx.cmd">
+<persistable path="/AudioPlayback/lnkx.cmd"/>
+</file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="dsplib.h" tooltip="FFT/dsplib.h">
 <persistable path="/FFT/dsplib.h"/>
 </file>
