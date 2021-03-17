@@ -1,0 +1,36 @@
+################################################################################
+# Automatically-generated file. Do not edit!
+################################################################################
+
+# Add inputs and outputs from these tool invocations to the build variables 
+LIB_SRCS += \
+../55xdsph.lib 
+
+C_SRCS += \
+../conf.c \
+../main.c 
+
+CMD_SRCS += \
+../lnkx.cmd 
+
+OBJS += \
+./conf.obj \
+./main.obj 
+
+C_DEPS += \
+./conf.pp \
+./main.pp 
+
+OBJS__QTD += \
+".\conf.obj" \
+".\main.obj" 
+
+C_DEPS__QTD += \
+".\conf.pp" \
+".\main.pp" 
+
+C_SRCS_QUOTED += \
+"../conf.c" \
+"../main.c" 
+
+

@@ -1,0 +1,236 @@
+******************************************************************************
+              TMS320C55x Linker PC v4.3.8                      
+******************************************************************************
+>> Linked Wed Mar 17 13:02:33 2021
+
+OUTPUT FILE NAME:   <BlinkingLED.out>
+ENTRY POINT SYMBOL: "_c_int00"  address: 00020ae6
+
+
+MEMORY CONFIGURATION
+
+         name            origin    length      used     unused   attr    fill
+                        (bytes)   (bytes)    (bytes)   (bytes)
+----------------------  --------  ---------  --------  --------  ----  --------
+PAGE 0:
+  MMR                   00000000   000000c0  00000000  000000c0  RWIX
+  DARAM0                000000c0   0000ff40  00003018  0000cf28  RWIX
+  SARAM0                00010000   00010000  00000000  00010000  RWIX
+  SARAM1                00020000   00020000  00000b44  0001f4bc  RWIX
+  SARAM2                00040000   0000fe00  0000002a  0000fdd6  RWIX
+  VECS                  0004fe00   00000200  00000100  00000100  RWIX
+  PDROM                 00ff8000   00008000  00000000  00008000  R IX
+
+PAGE 2:
+  IOPORT                00000000   00020000  00000000  00020000  RWI 
+
+
+SECTION ALLOCATION MAP
+(Addresses surrounded by []'s are displayed for convenience only!)
+
+output                                                          attributes/
+section   page  orgn(bytes) orgn(words) len(bytes) len(words)   input sections
+--------  ----  ----------- ----------- ---------- ----------   --------------
+.pinit       0   [ 00040000 ]  00020000          *   00000000   UNINITIALIZED
+
+.stack       0   [ 000000c0 ]  00000060          *   00001000   UNINITIALIZED
+                 [ 000000c0 ]  00000060          *   00001000   --HOLE--
+
+.data        0   [ 000000c0 ]  00000060          *   00000000   UNINITIALIZED
+
+.sysstack 
+*            0   [ 000020c0 ]  00001060          *   00000800   UNINITIALIZED
+                 [ 000020c0 ]  00001060          *   00000800   --HOLE--
+
+.bss         0   [ 000030c0 ]  00001860          *   0000000c   UNINITIALIZED
+                 [ 000030c0 ]  00001860          *   00000004   ezdsp5535bsl.lib : ezdsp5535_gpio.obj (.bss)
+                 [ 000030c8 ]  00001864          *   00000004   rts55x.lib : _lock.obj (.bss)
+                 [ 000030d0 ]  00001868          *   00000004              : exit.obj (.bss)
+
+.text        0     00020000  [ 00010000 ] 00000b44          *   
+                   00020000  [ 00010000 ] 0000068d          *   cslVC5505.lib : csl_gpio.obj (.text)
+                   0002068d  [ 00010346+] 000001e7          *   ezdsp5535bsl.lib : ezdsp5535_led.obj (.text)
+                   00020874  [ 0001043a ] 000000c1          *   blink_led.obj (.text)
+                   00020935  [ 0001049a+] 00000087          *   ezdsp5535bsl.lib : ezdsp5535_gpio.obj (.text)
+                   000209bc  [ 000104de ] 00000054          *                    : ezdsp5535.obj (.text)
+                   00020a10  [ 00010508 ] 0000004d          *   rts55x.lib : autoinit.obj (.text)
+                   00020a5d  [ 0001052e+] 0000004b          *              : args_main.obj (.text)
+                   00020aa8  [ 00010554 ] 0000003e          *              : exit.obj (.text)
+                   00020ae6  [ 00010573 ] 00000034          *              : boot.obj (.text)
+                   00020b1a  [ 0001058d ] 00000012          *              : _lock.obj (.text)
+                   00020b2c  [ 00010596 ] 0000000e          *   main.obj (.text)
+                   00020b3a  [ 0001059d ] 00000007          *   rts55x.lib : exit.obj (.text:CIO_breakpoint)
+                   00020b41  [ 000105a0+] 00000002          *              : vectors.obj (.text)
+                   00020b43  [ 000105a1 ] 00000001          *   --HOLE-- [fill = 20]
+
+.cinit       0   [ 00040000 ]  00020000          *   00000015   
+                 [ 00040000 ]  00020000          *   0000000a   rts55x.lib : _lock.obj (.cinit)
+                 [ 00040014 ]  0002000a          *   0000000a              : exit.obj (.cinit)
+                 [ 00040028 ]  00020014          *   00000001   --HOLE-- [fill = 0]
+
+vectors      0     0004fe00  [ 00027f00 ] 00000100          *   
+                   0004fe00  [ 00027f00 ] 00000100          *   rts55x.lib : vectors.obj (vectors)
+
+
+GLOBAL SYMBOLS: SORTED ALPHABETICALLY BY Name 
+
+abs. value/
+byte addr   word addr   name
+---------   ---------   ----
+00000002                $TI_capability$C5500$CallingConvention
+00000002                $TI_capability$C5500$MemoryModel
+00000001                $TI_capability_requires_rev3
+ffffffff                .bss
+ffffffff                .data
+ffffffff                .text
+00020b3b                C$$EXIT
+0002099e                _EZDSP5535_GPIO_getInput
+00020935                _EZDSP5535_GPIO_init
+00020960                _EZDSP5535_GPIO_setDirection
+00020984                _EZDSP5535_GPIO_setOutput
+000206c3                _EZDSP5535_LED_getall
+0002068d                _EZDSP5535_LED_init
+000207b8                _EZDSP5535_LED_off
+00020783                _EZDSP5535_LED_on
+00020715                _EZDSP5535_LED_setall
+000207eb                _EZDSP5535_LED_toggle
+00020846                _EZDSP5535_XF_get
+0002083b                _EZDSP5535_XF_off
+00020830                _EZDSP5535_XF_on
+00020855                _EZDSP5535_XF_toggle
+00020a02                _EZDSP5535_init
+000209bc                _EZDSP5535_wait
+000209f0                _EZDSP5535_waitusec
+000204eb                _GPIO_clearInt
+00020044                _GPIO_close
+00020068                _GPIO_config
+0002029b                _GPIO_configBit
+000203e3                _GPIO_disableInt
+00020461                _GPIO_enableInt
+000200ed                _GPIO_getConfig
+00020000                _GPIO_open
+00020175                _GPIO_read
+000205fe                _GPIO_reset
+00020577                _GPIO_statusBit
+000201f8                _GPIO_write
+            00001860    _GpioObj
+0004fe00                _Reset
+            00001060    __STACK_END
+00002000                __STACK_SIZE
+00001000                __SYSSTACK_SIZE
+ffffffff                ___binit__
+ffffffff                ___bss__
+ffffffff                ___c_args__
+            00020000    ___cinit__
+ffffffff                ___data__
+ffffffff                ___edata__
+ffffffff                ___end__
+ffffffff                ___etext__
+ffffffff                ___pinit__
+ffffffff                ___text__
+00020a5d                __args_main
+            00001868    __cleanup_ptr
+            0000186a    __dtors_ptr
+            00001864    __lock
+00020b2a                __nop
+00020b22                __register_lock
+00020b1a                __register_unlock
+            00000060    __stack
+            00001060    __sysstack
+            00001866    __unlock
+00020b3a                _abort
+00020a10                _auto_init
+00020874                _blink_led
+00020ae6                _c_int00
+00020aa8                _exit
+            00001862    _hGpio
+00020b2c                _main
+ffffffff                binit
+            00020000    cinit
+ffffffff                edata
+ffffffff                end
+ffffffff                etext
+ffffffff                pinit
+
+
+GLOBAL SYMBOLS: SORTED BY Symbol Address 
+
+abs. value/
+byte addr   word addr   name
+---------   ---------   ----
+00000001                $TI_capability_requires_rev3
+00000002                $TI_capability$C5500$CallingConvention
+00000002                $TI_capability$C5500$MemoryModel
+            00000060    __stack
+00001000                __SYSSTACK_SIZE
+00002000                __STACK_SIZE
+            00001060    __STACK_END
+            00001060    __sysstack
+            00001860    _GpioObj
+            00001862    _hGpio
+            00001864    __lock
+            00001866    __unlock
+            00001868    __cleanup_ptr
+            0000186a    __dtors_ptr
+00020000                _GPIO_open
+00020044                _GPIO_close
+00020068                _GPIO_config
+000200ed                _GPIO_getConfig
+00020175                _GPIO_read
+000201f8                _GPIO_write
+0002029b                _GPIO_configBit
+000203e3                _GPIO_disableInt
+00020461                _GPIO_enableInt
+000204eb                _GPIO_clearInt
+00020577                _GPIO_statusBit
+000205fe                _GPIO_reset
+0002068d                _EZDSP5535_LED_init
+000206c3                _EZDSP5535_LED_getall
+00020715                _EZDSP5535_LED_setall
+00020783                _EZDSP5535_LED_on
+000207b8                _EZDSP5535_LED_off
+000207eb                _EZDSP5535_LED_toggle
+00020830                _EZDSP5535_XF_on
+0002083b                _EZDSP5535_XF_off
+00020846                _EZDSP5535_XF_get
+00020855                _EZDSP5535_XF_toggle
+00020874                _blink_led
+00020935                _EZDSP5535_GPIO_init
+00020960                _EZDSP5535_GPIO_setDirection
+00020984                _EZDSP5535_GPIO_setOutput
+0002099e                _EZDSP5535_GPIO_getInput
+000209bc                _EZDSP5535_wait
+000209f0                _EZDSP5535_waitusec
+00020a02                _EZDSP5535_init
+00020a10                _auto_init
+00020a5d                __args_main
+00020aa8                _exit
+00020ae6                _c_int00
+00020b1a                __register_unlock
+00020b22                __register_lock
+00020b2a                __nop
+00020b2c                _main
+00020b3a                _abort
+00020b3b                C$$EXIT
+            00020000    ___cinit__
+            00020000    cinit
+0004fe00                _Reset
+ffffffff                .bss
+ffffffff                .data
+ffffffff                .text
+ffffffff                ___binit__
+ffffffff                ___bss__
+ffffffff                ___c_args__
+ffffffff                ___data__
+ffffffff                ___edata__
+ffffffff                ___end__
+ffffffff                ___etext__
+ffffffff                ___pinit__
+ffffffff                ___text__
+ffffffff                binit
+ffffffff                edata
+ffffffff                end
+ffffffff                etext
+ffffffff                pinit
+
+[74 symbols]

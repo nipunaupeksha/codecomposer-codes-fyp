@@ -1,0 +1,278 @@
+!SESSION 2021-03-17 12:08:14.337 -----------------------------------------------
+eclipse.buildId=4.2.4.00033
+java.version=1.5.0_14
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=en_US
+Command-line arguments:  -os win32 -ws win32 -arch x86
+
+!ENTRY com.ti.ccstudio.debug.core 4 0 2021-03-17 12:13:18.121
+!MESSAGE Fatal Error: C55xx: Error connecting to the target: (Error -151 @ 0x0) This utility failed to open the adapter for a custom emulator. The adapter returned an error. (Release 5.0.429.0) 
+
+
+!ENTRY com.ti.ccstudio.debug.core 4 0 2021-03-17 13:00:25.370
+!MESSAGE Fatal Error: C55xx: Error: (Error -150 @ 0x0) This utility failed to operate the adapter for a custom emulator. The adapter returned an error for unknown reasons. (Release 5.0.429.0) 
+
+
+!ENTRY com.ti.ccstudio.debug.core 4 0 2021-03-17 13:00:35.258
+!MESSAGE Fatal Error: C55xx: Error connecting to the target: (Error -154 @ 0x0) This utility failed to use the adapter for a custom emulator to perform a write to a controller register. The adapter returned an error. (Release 5.0.429.0) 
+
+
+!ENTRY com.ti.ccstudio.debug.core 4 0 2021-03-17 13:00:50.442
+!MESSAGE Fatal Error: C55xx: Error connecting to the target: (Error -1041 @ 0xFFFFFF66) The emulator reported an error. Confirm emulator configuration and connections, reset the emulator, and retry the operation. (Release 5.0.429.0) 
+
+
+!ENTRY com.ti.ccstudio.debug.core 4 0 2021-03-17 13:01:03.269
+!MESSAGE Fatal Error: C55xx: Error connecting to the target: (Error -1041 @ 0xFFFFFF66) The emulator reported an error. Confirm emulator configuration and connections, reset the emulator, and retry the operation. (Release 5.0.429.0) 
+
+
+!ENTRY com.ti.ccstudio.debug.core 4 0 2021-03-17 13:01:59.891
+!MESSAGE Fatal Error: C55xx: Error connecting to the target: (Error -1041 @ 0xFFFFFF66) The emulator reported an error. Confirm emulator configuration and connections, reset the emulator, and retry the operation. (Release 5.0.429.0) 
+
+
+!ENTRY com.ti.ccstudio.debug.core 4 0 2021-03-17 13:02:57.460
+!MESSAGE Fatal Error: C55xx: Error connecting to the target: (Error -1041 @ 0xFFFFFF66) The emulator reported an error. Confirm emulator configuration and connections, reset the emulator, and retry the operation. (Release 5.0.429.0) 
+
+
+!ENTRY com.ti.ccstudio.debug.core 4 0 2021-03-17 13:04:09.973
+!MESSAGE Fatal Error: C55xx: Error connecting to the target: (Error -1041 @ 0xFFFFFF66) The emulator reported an error. Confirm emulator configuration and connections, reset the emulator, and retry the operation. (Release 5.0.429.0) 
+
+
+!ENTRY com.ti.ccstudio.debug.core 4 0 2021-03-17 13:04:12.522
+!MESSAGE Fatal Error: C55xx: Error connecting to the target: (Error -1041 @ 0xFFFFFF66) The emulator reported an error. Confirm emulator configuration and connections, reset the emulator, and retry the operation. (Release 5.0.429.0) 
+
+
+!ENTRY com.ti.ccstudio.debug.core 4 0 2021-03-17 13:06:48.015
+!MESSAGE Fatal Error: C55xx: Error connecting to the target: (Error -1041 @ 0xFFFFFF66) The emulator reported an error. Confirm emulator configuration and connections, reset the emulator, and retry the operation. (Release 5.0.429.0) 
+
+
+!ENTRY com.ti.ccstudio.debug.core 4 0 2021-03-17 13:06:54.998
+!MESSAGE Fatal Error: C55xx: Error connecting to the target: (Error -1041 @ 0xFFFFFF66) The emulator reported an error. Confirm emulator configuration and connections, reset the emulator, and retry the operation. (Release 5.0.429.0) 
+
+!SESSION 2021-03-17 13:14:39.630 -----------------------------------------------
+eclipse.buildId=4.2.4.00033
+java.version=1.5.0_14
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=en_US
+Command-line arguments:  -os win32 -ws win32 -arch x86
+
+!ENTRY org.eclipse.core.resources 4 368 2021-03-17 14:39:45.242
+!MESSAGE Resource /CoherenceTesting does not exist.
+
+!ENTRY org.eclipse.core.resources 4 368 2021-03-17 14:39:46.829
+!MESSAGE Resource /CoherenceTesting does not exist.
+
+!ENTRY org.eclipse.core.resources 4 368 2021-03-17 14:39:46.838
+!MESSAGE Resource /CoherenceTesting does not exist.
+
+!ENTRY org.eclipse.core.resources 4 368 2021-03-17 14:40:20.067
+!MESSAGE Resource /CoherenceTesting does not exist.
+
+!ENTRY org.eclipse.core.resources 4 368 2021-03-17 14:40:40.275
+!MESSAGE Resource /CoherenceTesting does not exist.
+
+!ENTRY org.eclipse.core.resources 4 368 2021-03-17 14:40:43.578
+!MESSAGE Resource /CoherenceTesting does not exist.
+
+!ENTRY org.eclipse.core.resources 4 368 2021-03-17 14:41:13.473
+!MESSAGE Resource /CoherenceTesting does not exist.
+
+!ENTRY org.eclipse.core.resources 4 368 2021-03-17 14:41:13.508
+!MESSAGE Resource /CoherenceTesting does not exist.
+
+!ENTRY org.eclipse.core.resources 4 368 2021-03-17 14:41:18.605
+!MESSAGE Resource /CoherenceTesting does not exist.
+
+!ENTRY org.eclipse.core.resources 4 368 2021-03-17 14:41:20.450
+!MESSAGE Resource /CoherenceTesting does not exist.
+
+!ENTRY org.eclipse.core.resources 4 368 2021-03-17 14:42:31.828
+!MESSAGE Resource /CoherenceTesting does not exist.
+
+!ENTRY org.eclipse.core.resources 4 368 2021-03-17 14:42:31.908
+!MESSAGE Resource /CoherenceTesting does not exist.
+
+!ENTRY org.eclipse.core.resources 4 368 2021-03-17 14:42:46.477
+!MESSAGE Resource /CoherenceTesting does not exist.
+
+!ENTRY org.eclipse.core.resources 4 368 2021-03-17 14:44:57.638
+!MESSAGE Resource /CoherenceTesting does not exist.
+
+!ENTRY org.eclipse.core.resources 4 368 2021-03-17 14:45:22.142
+!MESSAGE Resource /CoherenceTesting does not exist.
+
+!ENTRY org.eclipse.core.resources 4 368 2021-03-17 14:45:30.731
+!MESSAGE Resource /CoherenceTesting does not exist.
+
+!ENTRY org.eclipse.core.resources 4 368 2021-03-17 14:45:31.737
+!MESSAGE Resource /CoherenceTesting does not exist.
+
+!ENTRY org.eclipse.core.resources 4 368 2021-03-17 14:45:44.827
+!MESSAGE Resource /CoherenceTesting does not exist.
+
+!ENTRY org.eclipse.core.resources 4 368 2021-03-17 14:45:44.900
+!MESSAGE Resource /CoherenceTesting does not exist.
+
+!ENTRY org.eclipse.core.resources 4 368 2021-03-17 14:46:04.362
+!MESSAGE Resource /CoherenceTesting does not exist.
+
+!ENTRY org.eclipse.core.resources 4 368 2021-03-17 14:46:18.094
+!MESSAGE Resource /CoherenceTesting does not exist.
+
+!ENTRY org.eclipse.core.resources 4 368 2021-03-17 14:46:18.191
+!MESSAGE Resource /CoherenceTesting does not exist.
+
+!ENTRY org.eclipse.core.resources 4 368 2021-03-17 14:46:34.254
+!MESSAGE Resource /CoherenceTesting does not exist.
+
+!ENTRY org.eclipse.core.resources 4 368 2021-03-17 14:46:38.219
+!MESSAGE Resource /CoherenceTesting does not exist.
+
+!ENTRY org.eclipse.core.resources 4 368 2021-03-17 14:46:42.960
+!MESSAGE Resource /CoherenceTesting does not exist.
+
+!ENTRY org.eclipse.core.resources 4 368 2021-03-17 14:47:04.044
+!MESSAGE Resource /CoherenceTesting does not exist.
+
+!ENTRY org.eclipse.core.resources 4 368 2021-03-17 14:47:04.046
+!MESSAGE Resource /CoherenceTesting does not exist.
+
+!ENTRY org.eclipse.core.resources 4 368 2021-03-17 14:47:04.698
+!MESSAGE Resource /CoherenceTesting does not exist.
+
+!ENTRY org.eclipse.core.resources 4 368 2021-03-17 14:48:25.406
+!MESSAGE Resource /CoherenceTesting does not exist.
+
+!ENTRY org.eclipse.core.resources 4 368 2021-03-17 14:48:42.228
+!MESSAGE Resource /CoherenceTesting does not exist.
+
+!ENTRY org.eclipse.core.resources 4 368 2021-03-17 14:48:42.231
+!MESSAGE Resource /CoherenceTesting does not exist.
+
+!ENTRY org.eclipse.core.resources 4 368 2021-03-17 14:48:46.641
+!MESSAGE Resource /CoherenceTesting does not exist.
+
+!ENTRY org.eclipse.core.resources 4 368 2021-03-17 14:49:26.183
+!MESSAGE Resource /CoherenceTesting does not exist.
+
+!ENTRY org.eclipse.core.resources 4 368 2021-03-17 14:49:28.076
+!MESSAGE Resource /CoherenceTesting does not exist.
+
+!ENTRY org.eclipse.core.resources 4 368 2021-03-17 14:50:30.345
+!MESSAGE Resource /CoherenceTesting does not exist.
+
+!ENTRY org.eclipse.core.resources 4 368 2021-03-17 14:50:35.731
+!MESSAGE Resource /CoherenceTesting does not exist.
+
+!ENTRY org.eclipse.core.resources 4 368 2021-03-17 14:50:39.283
+!MESSAGE Resource /CoherenceTesting does not exist.
+
+!ENTRY org.eclipse.core.resources 4 368 2021-03-17 14:54:20.041
+!MESSAGE Resource /CoherenceTesting does not exist.
+
+!ENTRY org.eclipse.core.resources 4 368 2021-03-17 14:54:20.402
+!MESSAGE Resource /CoherenceTesting does not exist.
+
+!ENTRY org.eclipse.core.resources 4 368 2021-03-17 14:54:20.423
+!MESSAGE Resource /CoherenceTesting does not exist.
+
+!ENTRY org.eclipse.core.resources 4 368 2021-03-17 14:54:20.461
+!MESSAGE Resource /CoherenceTesting does not exist.
+
+!ENTRY org.eclipse.core.resources 4 368 2021-03-17 14:54:20.483
+!MESSAGE Resource /CoherenceTesting does not exist.
+
+!ENTRY org.eclipse.core.resources 4 368 2021-03-17 14:54:20.520
+!MESSAGE Resource /CoherenceTesting does not exist.
+
+!ENTRY com.ti.ccstudio.debug.core 4 0 2021-03-17 15:06:15.662
+!MESSAGE Fatal Error: C55xx: Error: (Error -150 @ 0x0) This utility failed to operate the adapter for a custom emulator. The adapter returned an error for unknown reasons. (Release 5.0.429.0) 
+
+
+!ENTRY org.eclipse.core.resources 4 368 2021-03-17 15:12:14.152
+!MESSAGE Resource /CoherenceTesting does not exist.
+
+!ENTRY org.eclipse.osgi 4 0 2021-03-17 16:24:12.371
+!MESSAGE Error while stopping "org.eclipse.debug.core_3.2.0.vTI-201106061600".
+!STACK 0
+org.osgi.framework.BundleException: Exception in org.eclipse.debug.core.DebugPlugin.stop() of bundle org.eclipse.debug.core.
+	at org.eclipse.osgi.framework.internal.core.BundleContextImpl.stop(BundleContextImpl.java:1052)
+	at org.eclipse.osgi.framework.internal.core.BundleHost.stopWorker(BundleHost.java:396)
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.stop(AbstractBundle.java:400)
+	at org.eclipse.core.runtime.internal.adaptor.BundleStopper.basicStopBundles(BundleStopper.java:86)
+	at org.eclipse.core.runtime.internal.adaptor.BundleStopper.stopBundles(BundleStopper.java:73)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAdaptorHook.frameworkStopping(EclipseAdaptorHook.java:156)
+	at org.eclipse.osgi.baseadaptor.BaseAdaptor.frameworkStopping(BaseAdaptor.java:288)
+	at org.eclipse.osgi.framework.internal.core.Framework.shutdown(Framework.java:529)
+	at org.eclipse.osgi.framework.internal.core.Framework.close(Framework.java:440)
+	at org.eclipse.osgi.framework.internal.core.OSGi.close(OSGi.java:41)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.shutdown(EclipseStarter.java:423)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:193)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.core.launcher.Main.invokeFramework(Main.java:336)
+	at org.eclipse.core.launcher.Main.basicRun(Main.java:280)
+	at org.eclipse.core.launcher.Main.run(Main.java:996)
+	at org.eclipse.core.launcher.Main.main(Main.java:971)
+Caused by: java.lang.NullPointerException
+	at com.ti.ccstudio.debug.core.cdi.ModuleManager.doDispose(ModuleManager.java:148)
+	at com.ti.ccstudio.debug.core.cdi.model.CDIDisposableObject.dispose(CDIDisposableObject.java:113)
+	at com.ti.ccstudio.debug.core.cdi.model.TaskProxy.doDispose(TaskProxy.java:655)
+	at com.ti.ccstudio.debug.core.cdi.model.DeviceTaskProxy.doDispose(DeviceTaskProxy.java:126)
+	at com.ti.ccstudio.debug.core.cdi.model.CDIDisposableObject.dispose(CDIDisposableObject.java:113)
+	at com.ti.ccstudio.debug.core.cdi.model.DeviceThread.doDispose(DeviceThread.java:23)
+	at com.ti.ccstudio.debug.core.cdi.model.CDIDisposableObject.dispose(CDIDisposableObject.java:113)
+	at com.ti.ccstudio.debug.core.cdi.model.Target.doDispose(Target.java:101)
+	at com.ti.ccstudio.debug.core.cdi.model.DeviceTarget.doDispose(DeviceTarget.java:131)
+	at com.ti.ccstudio.debug.core.cdi.model.CDIDisposableObject.dispose(CDIDisposableObject.java:113)
+	at com.ti.ccstudio.debug.core.cdi.model.Target.terminate(Target.java:570)
+	at com.ti.ccstudio.debug.core.cdi.model.Target.terminate(Target.java:599)
+	at org.eclipse.cdt.debug.internal.core.model.CDebugTarget.terminate(CDebugTarget.java:561)
+	at org.eclipse.debug.core.Launch.terminate(Launch.java:243)
+	at org.eclipse.debug.internal.core.LaunchManager.shutdown(LaunchManager.java:1970)
+	at org.eclipse.debug.core.DebugPlugin.stop(DebugPlugin.java:570)
+	at org.eclipse.osgi.framework.internal.core.BundleContextImpl$3.run(BundleContextImpl.java:1036)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at org.eclipse.osgi.framework.internal.core.BundleContextImpl.stop(BundleContextImpl.java:1032)
+	... 19 more
+Root exception:
+java.lang.NullPointerException
+	at com.ti.ccstudio.debug.core.cdi.ModuleManager.doDispose(ModuleManager.java:148)
+	at com.ti.ccstudio.debug.core.cdi.model.CDIDisposableObject.dispose(CDIDisposableObject.java:113)
+	at com.ti.ccstudio.debug.core.cdi.model.TaskProxy.doDispose(TaskProxy.java:655)
+	at com.ti.ccstudio.debug.core.cdi.model.DeviceTaskProxy.doDispose(DeviceTaskProxy.java:126)
+	at com.ti.ccstudio.debug.core.cdi.model.CDIDisposableObject.dispose(CDIDisposableObject.java:113)
+	at com.ti.ccstudio.debug.core.cdi.model.DeviceThread.doDispose(DeviceThread.java:23)
+	at com.ti.ccstudio.debug.core.cdi.model.CDIDisposableObject.dispose(CDIDisposableObject.java:113)
+	at com.ti.ccstudio.debug.core.cdi.model.Target.doDispose(Target.java:101)
+	at com.ti.ccstudio.debug.core.cdi.model.DeviceTarget.doDispose(DeviceTarget.java:131)
+	at com.ti.ccstudio.debug.core.cdi.model.CDIDisposableObject.dispose(CDIDisposableObject.java:113)
+	at com.ti.ccstudio.debug.core.cdi.model.Target.terminate(Target.java:570)
+	at com.ti.ccstudio.debug.core.cdi.model.Target.terminate(Target.java:599)
+	at org.eclipse.cdt.debug.internal.core.model.CDebugTarget.terminate(CDebugTarget.java:561)
+	at org.eclipse.debug.core.Launch.terminate(Launch.java:243)
+	at org.eclipse.debug.internal.core.LaunchManager.shutdown(LaunchManager.java:1970)
+	at org.eclipse.debug.core.DebugPlugin.stop(DebugPlugin.java:570)
+	at org.eclipse.osgi.framework.internal.core.BundleContextImpl$3.run(BundleContextImpl.java:1036)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at org.eclipse.osgi.framework.internal.core.BundleContextImpl.stop(BundleContextImpl.java:1032)
+	at org.eclipse.osgi.framework.internal.core.BundleHost.stopWorker(BundleHost.java:396)
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.stop(AbstractBundle.java:400)
+	at org.eclipse.core.runtime.internal.adaptor.BundleStopper.basicStopBundles(BundleStopper.java:86)
+	at org.eclipse.core.runtime.internal.adaptor.BundleStopper.stopBundles(BundleStopper.java:73)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAdaptorHook.frameworkStopping(EclipseAdaptorHook.java:156)
+	at org.eclipse.osgi.baseadaptor.BaseAdaptor.frameworkStopping(BaseAdaptor.java:288)
+	at org.eclipse.osgi.framework.internal.core.Framework.shutdown(Framework.java:529)
+	at org.eclipse.osgi.framework.internal.core.Framework.close(Framework.java:440)
+	at org.eclipse.osgi.framework.internal.core.OSGi.close(OSGi.java:41)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.shutdown(EclipseStarter.java:423)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:193)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.core.launcher.Main.invokeFramework(Main.java:336)
+	at org.eclipse.core.launcher.Main.basicRun(Main.java:280)
+	at org.eclipse.core.launcher.Main.run(Main.java:996)
+	at org.eclipse.core.launcher.Main.main(Main.java:971)
