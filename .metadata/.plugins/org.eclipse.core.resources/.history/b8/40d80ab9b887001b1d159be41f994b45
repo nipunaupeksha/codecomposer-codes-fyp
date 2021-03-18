@@ -1,0 +1,26 @@
+#include "stdio.h"
+#include <math.h> /*Definitions for math library*/
+
+int fs = 16000; /*16 kHz sampling rate*/ 
+double frameLength = math.floorf(20 * fs/ 1000); /*Frame length*/
+
+if(frameLength/2 != floor(frameLength/2)){
+	frameLength = frameLength + 1;
+}
+
+/*
+#include "stdio.h"
+#include <math.h>
+
+#define PI 3.1415926535897 
+
+float* hanning_window(int frame_length){
+	float* hanning;
+	int i=0;
+	for(i=0; i<frame_length; i++){
+		float term = i/(float)(frame_length-1);
+		hanning[i] = 0.5 * (1 - cos((2*PI)*term));
+	}
+	return hanning;
+}
+*/

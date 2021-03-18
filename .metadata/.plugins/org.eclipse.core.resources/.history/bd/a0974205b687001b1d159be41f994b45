@@ -1,0 +1,13 @@
+#include "stdio.h"
+#include <math.h> /*Definitions for math library*/
+
+#define PI 3.1415926535897 
+
+float* hanning_window(int frame_length){
+	float hanning = new float[frame_length];
+	for(int i=0; i<L; i++){
+		float term = i/(float)(L-1);
+		hanning[i] = 0.5 * (1 - cos((2*PI)*term));
+	}
+	return &hanning;
+}

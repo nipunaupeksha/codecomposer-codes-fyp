@@ -1,0 +1,27 @@
+#include "stdio.h"
+#include <math.h> /*Definitions for math library*/
+
+#define PI 3.1415926535897
+
+void hanning_window(float* window, int frame_length){
+	int i=0;
+	for(i=0; i<frame_length; i++){
+		float term = i/(float)(frame_length-1);
+		window[i] = 0.5 * (1 - cos((2*PI)*term));
+	}
+}
+
+void coherence(){
+	const int fs = 16000; /*16 kHz sampling rate*/ 
+	int frameLength = floor(20 * fs/ 1000); /*Frame length*/
+	
+	if(frameLength/2 != floor(frameLength/2)){ /*If integer division of frameLength/2 is not equal to float division with floor function then add 1 to frameLength*/
+		frameLength = frameLength + 1;
+	}
+	
+	float shift = floor(frameLength * 0.25);
+	float window[frame_length] = {0},
+	hanning_window(window,frameLength);
+}
+
+

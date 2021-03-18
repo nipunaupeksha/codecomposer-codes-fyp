@@ -1,0 +1,8 @@
+#include "stdio.h"
+#include <math.h> /*Definitions for math library*/
+
+#define PI 3.1415926535897 
+
+float hanning_window(frame_length){
+	
+}
