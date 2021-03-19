@@ -4,6 +4,7 @@ Coherence.obj: ../Coherence.c
 Coherence.obj: E:/Software/Code\ Composer\ Studio/ccsv4/tools/compiler/c5500/include/stdio.h
 Coherence.obj: E:/Software/Code\ Composer\ Studio/ccsv4/tools/compiler/c5500/include/linkage.h
 Coherence.obj: E:/Software/Code\ Composer\ Studio/ccsv4/tools/compiler/c5500/include/stdarg.h
+Coherence.obj: ../conf.h
 Coherence.obj: E:/Software/Code\ Composer\ Studio/ccsv4/tools/compiler/c5500/include/math.h
 Coherence.obj: E:/Software/Code\ Composer\ Studio/ccsv4/tools/compiler/c5500/include/float.h
 Coherence.obj: E:/Software/Code\ Composer\ Studio/ccsv4/tools/compiler/c5500/include/access.h
@@ -15,6 +16,7 @@ Coherence.obj: E:/Software/Code\ Composer\ Studio/ccsv4/tools/compiler/c5500/inc
 E:/Software/Code\ Composer\ Studio/ccsv4/tools/compiler/c5500/include/stdio.h: 
 E:/Software/Code\ Composer\ Studio/ccsv4/tools/compiler/c5500/include/linkage.h: 
 E:/Software/Code\ Composer\ Studio/ccsv4/tools/compiler/c5500/include/stdarg.h: 
+../conf.h: 
 E:/Software/Code\ Composer\ Studio/ccsv4/tools/compiler/c5500/include/math.h: 
 E:/Software/Code\ Composer\ Studio/ccsv4/tools/compiler/c5500/include/float.h: 
 E:/Software/Code\ Composer\ Studio/ccsv4/tools/compiler/c5500/include/access.h: 

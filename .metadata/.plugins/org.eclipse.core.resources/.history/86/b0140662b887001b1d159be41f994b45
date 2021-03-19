@@ -1,9 +1,0 @@
-#include "stdio.h"
-#include <math.h> /*Definitions for math library*/
-
-const int fs = 16000; /*16 kHz sampling rate*/ 
-double frameLength = floor(20 * fs/ 1000); /*Frame length*/
-
-if(frameLength/2 != floor(frameLength/2)){
-	frameLength = frameLength + 1;
-}

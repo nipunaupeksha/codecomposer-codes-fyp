@@ -1,0 +1,34 @@
+#include "stdio.h"
+#include "conf.h"
+
+Int16 counter1; //counters for monitoring real-time operations
+Int16 counter2;
+
+/****************************************************************
+*                    Simple delay functions
+*****************************************************************/
+void wait( Uint32 delay ){
+    volatile Uint32 i;
+    for ( i = 0 ; i < delay ; i++ ){ };
+}
+
+void waitusec( Uint32 usec ){
+    wait( (Uint32)usec * 8 );
+}
+
+/****************************************************************
+*                       Write Data to Codec
+*****************************************************************/
+void codec_write(Int16 left_output, Int16 right_output){
+
+    counter2 = 0;
+    
+    while( !(IR & 0x20) )
+    {
+        counter2++; // Wait for transmit interrupt
+    }   
+    W0_MSW_W = left_output;         // Left output       
+    W0_LSW_W = 0;
+    W1_MSW_W = right_output;        // Right output
+    W1_LSW_W = 0;
+}
