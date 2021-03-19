@@ -1,0 +1,7 @@
+#ifndef FUNCTIONS_H
+#define FUNCTIONS_H
+
+float* hanning(Int32 N);
+
+
+#endif /*FUNCTIONS_H*/

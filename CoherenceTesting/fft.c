@@ -74,8 +74,8 @@ ifft( complex *v, int n, complex *tmp )
     for(m=0; m<n/2; m++) {
       w.real = cos(2*PI*m/(double)n);
       w.imag = sin(2*PI*m/(double)n);
-      z.real = w.real*vo[m].real - w.Im*vo[m].imag;	/* Re(w*vo[m]) */
-      z.imag = w.real*vo[m].Im + w.Im*vo[m].real;	/* Im(w*vo[m]) */
+      z.real = w.real*vo[m].real - w.imag*vo[m].imag;	/* Re(w*vo[m]) */
+      z.imag = w.real*vo[m].imag + w.imag*vo[m].real;	/* Im(w*vo[m]) */
       v[  m  ].real = ve[m].real + z.real;
       v[  m  ].imag = ve[m].imag + z.imag;
       v[m+n/2].real = ve[m].real - z.real;

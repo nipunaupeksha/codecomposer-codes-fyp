@@ -1,1 +1,1 @@
-"../Coherence.c" "../FFT.c" "../Hanning.c" "../aic3204_test.c" "../audio_playback.c" "../main.c" 
+"../coherence.c" "../conf.c" "../fft.c" "../functions.c" "../main.c" 

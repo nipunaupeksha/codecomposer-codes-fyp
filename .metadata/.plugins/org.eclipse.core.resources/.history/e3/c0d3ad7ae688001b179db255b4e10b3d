@@ -1,0 +1,19 @@
+#include "stdio.h"
+#include "conf.h"
+#include <math.h>
+
+#define lambda_x 0.68
+#define epsilon 10^(-12)
+#define newImag_ConsFilter 0.05
+
+void COH_RealImag(int* x1, int* x2, int fs){
+	Int32 frameLength, frameShift, FFT_LEN, lenS, nFrame, iniFrameSample, endFrameSample;
+	float* window; float* enhanced_output; float* P;
+	float band1;
+	
+	frameLength = (Int32)floor(fs*15/(double)1000);
+	if((frameLength/(double)2) != floor((frameLength/(double)2))){
+		frameLength += 1;
+	}
+	
+}

@@ -7,7 +7,6 @@ Int16 counter2;
 
 void init_buffer(complex *p){
 	p = (complex *)calloc(FFTPOINTS,sizeof(complex));
-
 }
 
 void free_buffer(complex *p){

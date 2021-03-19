@@ -1,0 +1,12 @@
+#ifndef FUNCTIONS_H_
+#define FUNCTIONS_H_
+
+float* hanning(Int32 N);
+float* zeros(Int32 N);
+float* ones(Int32 N);
+Int32 nextpow2(Int32 n);
+float* flipud(float* arr);
+double min(double n1, double n2);
+double max(double n1,double n2);
+
+#endif /*FUNCTIONS_H_*/

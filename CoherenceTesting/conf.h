@@ -25,7 +25,7 @@
 #define PCGCR1         		*(volatile ioport Uint16*)(0x1c02)
 #define PCGCR2         		*(volatile ioport Uint16*)(0x1c03)
 #define PSRCR         		*(volatile ioport Uint16*)(0x1c04)
-#define PSRCR       		*(volatile ioport Uint16*)(0x1c05)
+#define PRCR       		    *(volatile ioport Uint16*)(0x1c05)
 #define ODSCR		       	*(volatile ioport Uint16*)(0x1c16)
 #define PDINHIBR1        	*(volatile ioport Uint16*)(0x1c17)
 

@@ -1,0 +1,8 @@
+#include "stdio.h"
+#include "conf.h"
+#include "functions.c"
+#include <math.h>
+
+void coherence(){
+ return;
+}

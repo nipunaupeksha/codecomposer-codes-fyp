@@ -1,0 +1,10 @@
+#ifndef FUNCTIONS_H_
+#define FUNCTIONS_H_
+
+float* hanning(Int32 N);
+float* zeros(Int32 N);
+float* ones(Int32 N);
+Int32 nextpow2(Int32 n);
+
+
+#endif /*FUNCTIONS_H_*/

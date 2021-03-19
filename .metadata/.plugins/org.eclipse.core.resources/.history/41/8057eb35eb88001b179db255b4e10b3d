@@ -1,0 +1,86 @@
+#include "conf.h" /*Definition of complex variable structure*/
+#include <math.h> /*Definitions of math library*/
+
+#define PI 3.14159265358979323846264338327950288
+
+/************************************************
+ *   Implementation of Hann function in MATLAB
+ * *********************************************/
+float* hanning(Int32 N){
+	Int32 i;
+	float* w=(float*)calloc(N, sizeof(float));
+	memset(w, 0, N*sizeof(float));
+	for(i = 0; i<N; i++){
+		w[i] = 0.5 * (1 - cos(2 * PI * i/(double)(N-1)));
+	}
+	return w;
+}
+
+/************************************************
+*    Implementation of Zeors function in MATLAB
+*    1D Vector
+************************************************/
+float* zeros(Int32 N){
+	float* z;
+	z = (float*)calloc(N, sizeof(float));
+	memset(z, 0, N*sizeof(float));
+	return z;
+}
+
+/************************************************
+*    Implementation of Ones function in MATLAB
+*    1D Vector
+************************************************/
+float* ones(Int32 N){
+	float* z;
+	z = (float*)calloc(N, sizeof(float));
+	memset(z, 1, N*sizeof(float));
+	return z;
+}
+
+/*************************************************
+*    Implementatiion of nextpow2 function in
+*    MATLAB
+*************************************************/
+
+Int32 nextpow2(Int32 n){
+	Int16 nextPow;
+	n = abs(n);
+	nextPow = ceil(log2(n));	
+	return nextPow;
+}
+
+/*************************************************
+ *    Implementation of flipup function in 
+ *    MATLAB
+ ************************************************/
+ float* flipud(float* arr){
+ 	/*arr->an array*/
+ 	Int32 i; //Iteration
+ 	/* length of array
+ 	 * *(&arr + 1) - arr;
+ 	 * sizeof(arr)/sizeof(arr[0]) 
+ 	 */
+ 	Int32 N=*(&arr + 1) - arr;
+ 	float *w; //Initialize new arry
+ 	w = (float*)calloc(N, sizeof(float));
+ 	memset(w, 0, N*sizeof(float));
+ 	for(i=N-1;i>=0;i--){
+ 		w[N-1-i] = arr[i];
+ 	}
+ 	return w;
+ }
+
+/*************************************************
+*    Implementation of min function
+*************************************************/
+double min(double n1, double n2){
+	return n1 <= n2 ? n1 : n2;
+}
+
+/************************************************
+*    Implementation of max function
+************************************************/
+double max(double n1,double n2){
+	return n1>=n2 ? n1 : n2;
+}

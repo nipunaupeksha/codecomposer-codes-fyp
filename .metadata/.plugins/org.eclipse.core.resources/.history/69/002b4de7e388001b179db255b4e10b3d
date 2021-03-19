@@ -1,0 +1,26 @@
+#ifndef FUNCTIONS_H
+#define FUNCTIONS_H
+
+/****************************************************************
+*				      Some Data types macros
+****************************************************************/
+#define Uint32  unsigned long
+#define Uint16  unsigned short
+#define Uint8   unsigned char
+#define Int32   int
+#define Int16   short
+#define Int8    char
+
+/****************************************************************
+*				      Function Prototypes
+****************************************************************/
+
+float* hanning(Int32 N);
+float* zeros(Int32 N);
+float* ones(Int32 N);
+Int32 nextpow2(Int32 n);
+float* flipud(float* arr);
+double min(double n1, double n2);
+double max(double n1,double n2);
+
+#endif /*FUNCTIONS_H_*/

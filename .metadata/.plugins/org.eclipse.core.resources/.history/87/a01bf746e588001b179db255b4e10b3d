@@ -1,0 +1,8 @@
+#include "stdio.h"
+#include "conf.h"
+#include <math.h>
+
+void COH_RealImag(int* x1, int* x2, int fs){
+	double x = max(5,30);
+	printf(x);
+}

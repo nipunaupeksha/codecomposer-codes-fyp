@@ -318,3 +318,54 @@ Command-line arguments:  -os win32 -ws win32 -arch x86
 
 !ENTRY org.eclipse.ui 4 4 2021-03-19 20:31:44.492
 !MESSAGE Invalid Menu Extension (Path is invalid): org.eclipse.rtsc.xdctools.project.ui.actions.UpgradeRTSCProductVersionAction
+
+!ENTRY org.eclipse.cdt.ui 4 4 2021-03-19 22:00:46.731
+!MESSAGE Error
+!STACK 1
+C Model Exception: Core Exception [code 275] A resource exists with a different case: /CoherenceTesting/Coherence.c.
+	at org.eclipse.cdt.internal.core.model.BatchOperation.executeOperation(BatchOperation.java:45)
+	at org.eclipse.cdt.internal.core.model.CModelOperation.execute(CModelOperation.java:342)
+	at org.eclipse.cdt.internal.core.model.CModelOperation.run(CModelOperation.java:607)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:1737)
+	at org.eclipse.cdt.core.model.CoreModel.run(CoreModel.java:1217)
+	at org.eclipse.cdt.internal.ui.actions.WorkbenchRunnableAdapter.run(WorkbenchRunnableAdapter.java:63)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:113)
+org.eclipse.cdt.core.model.CModelException[966]: org.eclipse.core.internal.resources.ResourceException: A resource exists with a different case: /CoherenceTesting/Coherence.c.
+	at org.eclipse.core.internal.resources.Resource.checkDoesNotExist(Resource.java:281)
+	at org.eclipse.core.internal.resources.File.create(File.java:109)
+	at org.eclipse.core.internal.resources.File.create(File.java:179)
+	at org.eclipse.cdt.internal.ui.wizards.filewizard.NewSourceFileGenerator.createFile(NewSourceFileGenerator.java:141)
+	at org.eclipse.cdt.internal.ui.wizards.filewizard.NewSourceFileGenerator.createNewFile(NewSourceFileGenerator.java:130)
+	at org.eclipse.cdt.internal.ui.wizards.filewizard.NewSourceFileGenerator.createSourceFile(NewSourceFileGenerator.java:102)
+	at org.eclipse.cdt.internal.ui.wizards.filewizard.NewSourceFileCreationWizardPage.createFile(NewSourceFileCreationWizardPage.java:137)
+	at org.eclipse.cdt.internal.ui.wizards.filewizard.AbstractFileCreationWizard.finishPage(AbstractFileCreationWizard.java:48)
+	at org.eclipse.cdt.internal.ui.wizards.NewElementWizard$2.run(NewElementWizard.java:99)
+	at org.eclipse.cdt.internal.core.model.BatchOperation.executeOperation(BatchOperation.java:34)
+	at org.eclipse.cdt.internal.core.model.CModelOperation.execute(CModelOperation.java:342)
+	at org.eclipse.cdt.internal.core.model.CModelOperation.run(CModelOperation.java:607)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:1737)
+	at org.eclipse.cdt.core.model.CoreModel.run(CoreModel.java:1217)
+	at org.eclipse.cdt.internal.ui.actions.WorkbenchRunnableAdapter.run(WorkbenchRunnableAdapter.java:63)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:113)
+!SUBENTRY 1 org.eclipse.cdt.core 4 966 2021-03-19 22:00:46.732
+!MESSAGE A resource exists with a different case: /CoherenceTesting/Coherence.c.
+!STACK 1
+org.eclipse.core.internal.resources.ResourceException: A resource exists with a different case: /CoherenceTesting/Coherence.c.
+	at org.eclipse.core.internal.resources.Resource.checkDoesNotExist(Resource.java:281)
+	at org.eclipse.core.internal.resources.File.create(File.java:109)
+	at org.eclipse.core.internal.resources.File.create(File.java:179)
+	at org.eclipse.cdt.internal.ui.wizards.filewizard.NewSourceFileGenerator.createFile(NewSourceFileGenerator.java:141)
+	at org.eclipse.cdt.internal.ui.wizards.filewizard.NewSourceFileGenerator.createNewFile(NewSourceFileGenerator.java:130)
+	at org.eclipse.cdt.internal.ui.wizards.filewizard.NewSourceFileGenerator.createSourceFile(NewSourceFileGenerator.java:102)
+	at org.eclipse.cdt.internal.ui.wizards.filewizard.NewSourceFileCreationWizardPage.createFile(NewSourceFileCreationWizardPage.java:137)
+	at org.eclipse.cdt.internal.ui.wizards.filewizard.AbstractFileCreationWizard.finishPage(AbstractFileCreationWizard.java:48)
+	at org.eclipse.cdt.internal.ui.wizards.NewElementWizard$2.run(NewElementWizard.java:99)
+	at org.eclipse.cdt.internal.core.model.BatchOperation.executeOperation(BatchOperation.java:34)
+	at org.eclipse.cdt.internal.core.model.CModelOperation.execute(CModelOperation.java:342)
+	at org.eclipse.cdt.internal.core.model.CModelOperation.run(CModelOperation.java:607)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:1737)
+	at org.eclipse.cdt.core.model.CoreModel.run(CoreModel.java:1217)
+	at org.eclipse.cdt.internal.ui.actions.WorkbenchRunnableAdapter.run(WorkbenchRunnableAdapter.java:63)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:113)
+!SUBENTRY 2 org.eclipse.core.resources 4 275 2021-03-19 22:00:46.732
+!MESSAGE A resource exists with a different case: /CoherenceTesting/Coherence.c.
