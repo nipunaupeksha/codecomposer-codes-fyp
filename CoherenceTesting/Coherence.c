@@ -2,18 +2,22 @@
 #include "conf.h"
 #include <math.h>
 
-#define lambda_x 0.68
+#define lambda_x 0.68 /*Forgetting factor for smoothing power specturm*/
 #define epsilon 10^(-12)
-#define negImag_ConsFilter 0.05
-
+#define negImag_ConsFilter 0.05 /*Constant value of filter when imag part is negative*/
+/*
+ * x1, x2 : Input signals at two channels
+ * fs : Sampling frequency
+ * 
+ * */
 void COH_RealImag(Int32* x1, Int32* x2, Int32 fs){
 	Int32 i; /*Iteration values*/
 	Int32 frameLength, frameShift, FFT_LEN, lenS, nFrame, iniFrameSample, endFrameSample;
 	float band1;
 	float* window; float* enhanced_output; float* P; float* limNeg; float* Frame1; float* Frame2; 
 	float* wFrame1; float* wFrame2; float* PX1X1; float* PX2X2; float* reCOH; float* imCOH; 
-	float* G1; float* G2; float* G; float* H1; float* H2; float* enhSpeech_Frame; 
-	complex* PX1X2; complex* v1; complex* v2; complex* scratch; complex* cohX;
+	float* G1; float* G2; float* onesG; float* G; float* H1; float* H2;
+	complex* PX1X2; complex* v1; complex* v2; complex* scratch; complex* cohX; complex* enhSpeech_Frame; 
 	
 	
 	frameLength = (Int32)floor(fs*15/(float)1000);
@@ -32,8 +36,10 @@ void COH_RealImag(Int32* x1, Int32* x2, Int32 fs){
 	iniFrameSample = 1; //or 0?
 	endFrameSample = iniFrameSample + frameLength -1;
 	enhanced_output = zeros(lenS);
-	band1 = floor(1000*FFT_LEN/(float)fs);
+	band1 = floor(1000*FFT_LEN/(float)fs); /*0 -> 1 kHz*/
+	/*Defining exponents of coherence function*/
 	P = zeros(FFT_LEN/2);
+	/*Defining thresholds for imaginary parts to consider negative(noise)*/
 	limNeg = zeros(FFT_LEN/2);
 	for(i=0;i<band1;i++){
 		P[i] = 16;
@@ -45,18 +51,16 @@ void COH_RealImag(Int32* x1, Int32* x2, Int32 fs){
 	}
 	
 	while(endFrameSample<lenS){
-		nFrame += 1;
+		nFrame += 1;/*A new frame to process*/
+		/*Get short-time magnitude and phase spectrum for each input channel*/
 		for(i=0;i<frameLength;i++){
     		Frame1[i] = x1[iniFrameSample+i];
     		Frame2[i] = x2[iniFrameSample+i];
 		}
-		
 		for(i=0;i<frameLength; i++){
 			wFrame1[i] = Frame1[i]*window[i];
 			wFrame2[i] = Frame2[i]*window[i];
 		}
-		
-		
 		
 		for(i=0;i<frameLength;i++){
 			v1[i].real = wFrame1[i];
@@ -91,8 +95,9 @@ void COH_RealImag(Int32* x1, Int32* x2, Int32 fs){
 			reCOH[i-2] = cohX[i].real;
 			imCOH[i-2] = cohX[i].imag;
 		}
+		onesG = ones(FFT_LEN/2);
 		for(i=0;i<FFT_LEN/2;i++){
-			G1 = 1 - (float)abs(reCOH[i])*P[i];
+			G1[i] = onesG[i] - (float)abs(reCOH[i])*P[i]; /*for suppressing noise coming from angles greater than 90*/
 		}
 		G2 = ones(FFT_LEN/2);
 		for(i=0;i<FFT_LEN/2;i++){
@@ -100,15 +105,17 @@ void COH_RealImag(Int32* x1, Int32* x2, Int32 fs){
 				G2[i] = negImag_ConsFilter;
 			}
 		}
+		/*Halfband final filter*/
 		for(i=0;i<FFT_LEN/2;i++){
 			G[i] = G1[i] * G2[i];
 		}
+		/*Fullband final filter*/
 		H2 = flipud(G);
 		for(i=0;i<FFT_LEN/2;i++){
 			H1[i] = (float)abs(G[i]);
 			H2[i] = (float)abs(H2[i]);
 		}
-		for(i=0;i<FFT_LEN;i++){
+		for(i=0; i<FFT_LEN; i++){
 			if(i<FFT_LEN/2){
 				v1[i].real = v1[i].real * H1[i];
 				v1[i].imag = v1[i].imag * H1[i];
@@ -118,13 +125,13 @@ void COH_RealImag(Int32* x1, Int32* x2, Int32 fs){
 			}
 		}
 		ifft(v1, FFT_LEN, scratch);
-		for(i=0;i<frameLength;i++){
-			enhSpeech_Frame[i] = v1[i];
+		for(i=0; i<frameLength; i++){
+			enhSpeech_Frame[i].real = v1[i].real; //real is enough??
 		}
 		for(i = 0;i<frameLength;i++){
-			enhanced_output[iniFrameSample+i] = enhSpeech_Frame[i]+enhanced_output[iniFrameSample+i];
+			enhanced_output[iniFrameSample+i] = enhSpeech_Frame[i].real + enhanced_output[iniFrameSample+i];
 		}
-		
+		/*Update frame boundaries*/
 		iniFrameSample+=frameShift;
 		endFrameSample += frameShift;
 	}

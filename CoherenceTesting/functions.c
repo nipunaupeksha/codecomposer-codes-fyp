@@ -1,4 +1,6 @@
 #include "conf.h" /*Definition of complex variable structure*/
+#include "stdlib.h"
+#include "string.h"
 #include <math.h> /*Definitions of math library*/
 
 #define PI 3.14159265358979323846264338327950288
@@ -8,8 +10,7 @@
  * *********************************************/
 float* hanning(Int32 N){
 	Int32 i;
-	float* w;
-	w = (float*)calloc(N, sizeof(float));
+	float* w = (float*) malloc(sizeof(float) * N);
 	memset(w, 0, N*sizeof(float));
 	for(i = 0; i<N; i++){
 		w[i] = 0.5 * (1 - cos(2 * PI * i/(float)(N-1)));
@@ -22,8 +23,7 @@ float* hanning(Int32 N){
 *    1D Vector
 ************************************************/
 float* zeros(Int32 N){
-	float* z;
-	z = (float*)calloc(N, sizeof(float));
+	float* z = (float*) malloc(N * sizeof(float));
 	memset(z, 0, N*sizeof(float));
 	return z;
 }
@@ -33,10 +33,9 @@ float* zeros(Int32 N){
 *    1D Vector
 ************************************************/
 float* ones(Int32 N){
-	float* z;
-	z = (float*)calloc(N, sizeof(float));
-	memset(z, 1, N*sizeof(float));
-	return z;
+	float* o = (float*) malloc(N * sizeof(float));
+	memset(o, 1, N*sizeof(float));
+	return o;
 }
 
 /*************************************************
@@ -62,14 +61,13 @@ Int32 nextpow2(Int32 n){
  	 * *(&arr + 1) - arr;
  	 * sizeof(arr)/sizeof(arr[0]) 
  	 */
- 	Int32 N=*(&arr + 1) - arr;
- 	float *w; //Initialize new arry
- 	w = (float*)calloc(N, sizeof(float));
- 	memset(w, 0, N*sizeof(float));
+ 	Int32 N = *(&arr + 1) - arr;
+ 	float *f =(float*) malloc(N * sizeof(float));
+ 	memset(f, 0, N*sizeof(float));
  	for(i=N-1;i>=0;i--){
- 		w[N-1-i] = arr[i];
+ 		f[N-1-i] = arr[i];
  	}
- 	return w;
+ 	return f;
  }
 
 /*************************************************
