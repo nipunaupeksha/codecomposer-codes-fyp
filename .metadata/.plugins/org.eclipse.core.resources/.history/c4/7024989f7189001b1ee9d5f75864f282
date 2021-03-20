@@ -4,7 +4,6 @@
 #include <math.h> /*Definitions of math library*/
 
 #define PI 3.14159265358979323846264338327950288
-#define clipThresholdFactor 0.5
 
 /************************************************
  *   Implementation of Hann function in MATLAB
@@ -86,43 +85,10 @@ double max(double n1,double n2){
 }
 
 /*************************************************
- *   Periodicity Function -> Peak Periodicity
- ************************************************/
- void peakPeriodicity(Int32* input, Int32 fs){
- 	Int32 i; //Iterator
- 	Int32 duration;//length of input signal
- 	float clipThreshold;
- 	float* output;
- 	float maxValue=0;
- 	
- 	duration = *(&input)-input;
- 	
- 	for(i=0;i<duration;i++){
- 		maxValue = (float)max(maxValue,input[i]);
- 	}
- 	
- 	clipThreshold = clipThresholdFactor * maxValue;
- 	output = zeros(duration);
-	
-	for(i=0;i<duration;i++){
-		if(input[i]>=clipThreshold){
-			output[i] = input[i] - clipThreshold;
-		}else if(abs(input[i])<clipThreshold){
-			output[i]= 0;
-		}else if(input[i]<-clipThreshold){
-			output[i] = input[i]+clipThreshold;
-		}
-	} 	
- 	
- 	
- }
-
-/*************************************************
 *    Voice Activity Detector
 *************************************************/
-/*
 void voice_activity_detector(Int32* x, Int32 fs){
-	Int32 i; //Iterator
+	Int32 i; /*Iterator*/
 	float* vadMarker; float* outputSignal; float* additionalArray;
 	float* inputSignal;
 	Int32 frameLength; Int32 frameLengthSamples; Int32 numFrames; Int32 signalLength;
@@ -138,6 +104,6 @@ void voice_activity_detector(Int32* x, Int32 fs){
 	additionalArray = zeros(additionalSamples);
 	for(i=0;i<signalLength;i++){
 		
-	} //TODO line 16/17
+	} /*TODO line 16/17*/
 	
-}*/
+}

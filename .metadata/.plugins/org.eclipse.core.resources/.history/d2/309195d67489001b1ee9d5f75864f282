@@ -101,7 +101,7 @@ double max(double n1,double n2){
  		maxValue = (float)max(maxValue,input[i]);
  	}
  	
- 	clipThreshold = clipThresholdFactor * maxValue;
+ 	clipThreshold = clipThresholdFactor * max(maxValue);
  	output = zeros(duration);
 	
 	for(i=0;i<duration;i++){

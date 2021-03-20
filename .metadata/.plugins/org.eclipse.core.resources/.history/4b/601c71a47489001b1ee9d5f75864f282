@@ -93,15 +93,9 @@ double max(double n1,double n2){
  	Int32 duration;//length of input signal
  	float clipThreshold;
  	float* output;
- 	float maxValue=0;
  	
  	duration = *(&input)-input;
- 	
- 	for(i=0;i<duration;i++){
- 		maxValue = (float)max(maxValue,input[i]);
- 	}
- 	
- 	clipThreshold = clipThresholdFactor * maxValue;
+ 	clipThreshold = clipThresholdFactor * max(input);
  	output = zeros(duration);
 	
 	for(i=0;i<duration;i++){
