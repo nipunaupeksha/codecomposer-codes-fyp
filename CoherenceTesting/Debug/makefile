@@ -10,6 +10,7 @@ CG_TOOL_ROOT := E:/Software/Code Composer Studio/ccsv4/tools/compiler/c5500
 
 ORDERED_OBJS += \
 $(GEN_CMDS_QUOTED) \
+"./xcorr.obj" \
 "./main.obj" \
 "./functions.obj" \
 "./fft.obj" \
@@ -129,8 +130,8 @@ CoherenceTesting.out: $(OBJS) $(CMD_SRCS) $(GEN_CMDS)
 # Other Targets
 clean:
 	-$(RM) $(C5500_EXECUTABLE_OUTPUTS__QTD) "CoherenceTesting.out"
-	-$(RM) ".\adaptiveFilter.obj" ".\coherence.obj" ".\conf.obj" ".\fft.obj" ".\functions.obj" ".\main.obj" 
-	-$(RM) ".\adaptiveFilter.pp" ".\coherence.pp" ".\conf.pp" ".\fft.pp" ".\functions.pp" ".\main.pp" 
+	-$(RM) ".\adaptiveFilter.obj" ".\coherence.obj" ".\conf.obj" ".\fft.obj" ".\functions.obj" ".\main.obj" ".\xcorr.obj" 
+	-$(RM) ".\adaptiveFilter.pp" ".\coherence.pp" ".\conf.pp" ".\fft.pp" ".\functions.pp" ".\main.pp" ".\xcorr.pp" 
 	-@echo ' '
 
 .PHONY: all clean dependents

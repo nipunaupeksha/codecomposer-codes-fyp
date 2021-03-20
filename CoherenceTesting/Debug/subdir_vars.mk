@@ -9,7 +9,8 @@ C_SRCS += \
 ../conf.c \
 ../fft.c \
 ../functions.c \
-../main.c 
+../main.c \
+../xcorr.c 
 
 CMD_SRCS += \
 ../lnkx.cmd 
@@ -20,7 +21,8 @@ OBJS += \
 ./conf.obj \
 ./fft.obj \
 ./functions.obj \
-./main.obj 
+./main.obj \
+./xcorr.obj 
 
 C_DEPS += \
 ./adaptiveFilter.pp \
@@ -28,7 +30,8 @@ C_DEPS += \
 ./conf.pp \
 ./fft.pp \
 ./functions.pp \
-./main.pp 
+./main.pp \
+./xcorr.pp 
 
 OBJS__QTD += \
 ".\adaptiveFilter.obj" \
@@ -36,7 +39,8 @@ OBJS__QTD += \
 ".\conf.obj" \
 ".\fft.obj" \
 ".\functions.obj" \
-".\main.obj" 
+".\main.obj" \
+".\xcorr.obj" 
 
 C_DEPS__QTD += \
 ".\adaptiveFilter.pp" \
@@ -44,7 +48,8 @@ C_DEPS__QTD += \
 ".\conf.pp" \
 ".\fft.pp" \
 ".\functions.pp" \
-".\main.pp" 
+".\main.pp" \
+".\xcorr.pp" 
 
 C_SRCS_QUOTED += \
 "../adaptiveFilter.c" \
@@ -52,6 +57,7 @@ C_SRCS_QUOTED += \
 "../conf.c" \
 "../fft.c" \
 "../functions.c" \
-"../main.c" 
+"../main.c" \
+"../xcorr.c" 
 
 

@@ -5,6 +5,8 @@
 
 #define PI 3.14159265358979323846264338327950288
 #define clipThresholdFactor 0.5
+#define lowerLagMS 2.5
+#define upperLagMS 5
 
 /************************************************
  *   Implementation of Hann function in MATLAB
@@ -82,7 +84,7 @@ double min(double n1, double n2){
 *    Implementation of max function
 ************************************************/
 double max(double n1,double n2){
-	return n1>=n2 ? n1 : n2;
+	return n1 >= n2 ? n1 : n2;
 }
 
 /*************************************************
@@ -91,8 +93,8 @@ double max(double n1,double n2){
  void peakPeriodicity(Int32* input, Int32 fs){
  	Int32 i; //Iterator
  	Int32 duration;//length of input signal
- 	float clipThreshold;
- 	float* output;
+ 	float clipThreshold; float lowerLag; float upperLag;
+ 	float* output; float* acf;float* hVector;float* lagArray;
  	float maxValue=0;
  	
  	duration = *(&input)-input;
@@ -114,6 +116,23 @@ double max(double n1,double n2){
 		}
 	} 	
  	
+ 	//TODO acf = xcorr(output)
+ 	lowerLag = (float)round((lowerLagMS * fs)/(float)1000);
+ 	upperLag = (float)round((upperLagMS * fs)/(float)1000);
+ 	//TODO acfSectionalized = acf(duration+lowerLag:duration+upperLag)
+ 	for(i=0;i<upperLag-lowerLag+1;i++){
+ 		hVector[i] = lowerLag+i;
+ 	}
+ 	for(i=0;i<upperLag-lowerLag+1;i++){
+ 		lagArray[i] = 1 - hVector[i];
+ 	}
+ 	//TODO acfNormalized = acfSectionalized ./ lagArray;
+
+	//TODO energyNormalized = acf(duration)/duration;
+
+	//TODO finalacf = acfNormalized / energyNormalized;
+
+	//TODO peakPeriodicity = max(finalacf);
  	
  }
 
@@ -141,3 +160,4 @@ void voice_activity_detector(Int32* x, Int32 fs){
 	} //TODO line 16/17
 	
 }*/
+
