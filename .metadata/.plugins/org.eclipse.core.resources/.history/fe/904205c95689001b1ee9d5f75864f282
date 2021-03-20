@@ -146,11 +146,4 @@ void COH_RealImag(Int32* x1, Int32* x2, Int32 fs){
 	free(H1);
 	free(H2);
 	free(enhSpeech_Frame);
-	free(PX1X2);
-	free(v1);
-	free(v2);
-	free(scratch);
-	free(cohX);
-	
-	return;
 }	

@@ -11,7 +11,7 @@ void COH_RealImag(Int32* x1, Int32* x2, Int32 fs){
 	Int32 frameLength, frameShift, FFT_LEN, lenS, nFrame, iniFrameSample, endFrameSample;
 	float band1;
 	float* window; float* enhanced_output; float* P; float* limNeg; float* Frame1; float* Frame2; 
-	float* wFrame1; float* wFrame2; float* PX1X1; float* PX2X2; float* reCOH; float* imCOH; 
+	float* wFrame1; float* wFrame2; float* PX1X1; float* PX2X2; float * reCOH; float* imCOH; 
 	float* G1; float* G2; float* G; float* H1; float* H2; float* enhSpeech_Frame; 
 	complex* PX1X2; complex* v1; complex* v2; complex* scratch; complex* cohX;
 	
@@ -138,19 +138,4 @@ void COH_RealImag(Int32* x1, Int32* x2, Int32 fs){
 	free(wFrame2);
 	free(PX1X1);
 	free(PX2X2);
-	free(reCOH);
-	free(imCOH);
-	free(G1);
-	free(G2);
-	free(G);
-	free(H1);
-	free(H2);
-	free(enhSpeech_Frame);
-	free(PX1X2);
-	free(v1);
-	free(v2);
-	free(scratch);
-	free(cohX);
-	
-	return;
 }	

@@ -9,12 +9,13 @@
 void COH_RealImag(Int32* x1, Int32* x2, Int32 fs){
 	Int32 i; /*Iteration values*/
 	Int32 frameLength, frameShift, FFT_LEN, lenS, nFrame, iniFrameSample, endFrameSample;
+	float* window; float* enhanced_output; float* P; float* limNeg;
 	float band1;
-	float* window; float* enhanced_output; float* P; float* limNeg; float* Frame1; float* Frame2; 
-	float* wFrame1; float* wFrame2; float* PX1X1; float* PX2X2; float* reCOH; float* imCOH; 
-	float* G1; float* G2; float* G; float* H1; float* H2; float* enhSpeech_Frame; 
-	complex* PX1X2; complex* v1; complex* v2; complex* scratch; complex* cohX;
-	
+	float* Frame1; float* Frame2; float *wFrame1; float *wFrame2; float* PX1X1; float* PX2X2; 
+	complex* PX1X2;
+	complex *v1; complex *v2; complex *scratch;
+	complex * cohX;
+	float * reCOH; float* imCOH; float *G1; float *G2; float *G; float* H1;
 	
 	frameLength = (Int32)floor(fs*15/(float)1000);
 	if((frameLength/(float)2) != floor((frameLength/(float)2))){
@@ -70,14 +71,14 @@ void COH_RealImag(Int32* x1, Int32* x2, Int32 fs){
 		fft(v2, FFT_LEN,scratch);
 		if(nFrame == 1){
 			for(i=0;i<frameLength;i++){
-				PX1X1[i] = (v1[i].real * v1[i].real) + (v1[i].imag * v1[i].imag);
+				PX1X1[i] = (v1[i].real * v1[i].real) + (v1[i].imag * v[i].imag);
 				PX2X2[i] = (v2[i].real * v2[i].real) + (v2[i].imag * v2[i].imag);
 				PX1X2[i].real = (v1[i].real * v2[i].real) + (v1[i].imag * v2[i].imag);
 				PX1X2[i].imag = (v1[i].real * v2[i].imag) + (v1[i].imag * v2[i].real);
 			}
 		}else{
 			for(i=0;i<frameLength;i++){
-				PX1X1[i] = lambda_x * PX1X1[i] + (1-lambda_x)*(v1[i].real * v1[i].real) + (v1[i].imag * v1[i].imag);
+				PX1X1[i] = lambda_x * PX1X1[i] + (1-lambda_x)*(v1[i].real * v1[i].real) + (v1[i].imag * v[i].imag);
 				PX2X2[i] = lambda_x * PX2X2[i] + (1-lambda_x)*(v2[i].real * v2[i].real) + (v2[i].imag * v2[i].imag);
 				PX1X2[i].real = lambda_x * PX1X2[i].real + (1-lambda_x)*(v1[i].real * v2[i].real) + (v1[i].imag * v2[i].imag);
 				PX1X2[i].imag = lambda_x * PX1X2[i].imag + (1-lambda_x)*(v1[i].real * v2[i].imag) + (v1[i].imag * v2[i].real);
@@ -103,54 +104,9 @@ void COH_RealImag(Int32* x1, Int32* x2, Int32 fs){
 		for(i=0;i<FFT_LEN/2;i++){
 			G[i] = G1[i] * G2[i];
 		}
-		H2 = flipud(G);
-		for(i=0;i<FFT_LEN/2;i++){
-			H1[i] = (float)abs(G[i]);
-			H2[i] = (float)abs(H2[i]);
-		}
-		for(i=0;i<FFT_LEN;i++){
-			if(i<FFT_LEN/2){
-				v1[i].real = v1[i].real * H1[i];
-				v1[i].imag = v1[i].imag * H1[i];
-			}else{
-				v1[i].real = v1[i].real * H2[i];
-				v1[i].imag = v1[i].imag * H2[i];
-			}
-		}
-		ifft(v1, FFT_LEN, scratch);
-		for(i=0;i<frameLength;i++){
-			enhSpeech_Frame[i] = v1[i];
-		}
-		for(i = 0;i<frameLength;i++){
-			enhanced_output[iniFrameSample+i] = enhSpeech_Frame[i]+enhanced_output[iniFrameSample+i];
-		}
+		H1 = flipud(G);
 		
 		iniFrameSample+=frameShift;
 		endFrameSample += frameShift;
 	}
-	/*Free variables*/
-	free(window);
-	free(limNeg);
-	free(P);
-	free(Frame1);
-	free(Frame2);
-	free(wFrame1);
-	free(wFrame2);
-	free(PX1X1);
-	free(PX2X2);
-	free(reCOH);
-	free(imCOH);
-	free(G1);
-	free(G2);
-	free(G);
-	free(H1);
-	free(H2);
-	free(enhSpeech_Frame);
-	free(PX1X2);
-	free(v1);
-	free(v2);
-	free(scratch);
-	free(cohX);
-	
-	return;
 }	

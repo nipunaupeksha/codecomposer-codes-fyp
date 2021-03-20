@@ -151,6 +151,4 @@ void COH_RealImag(Int32* x1, Int32* x2, Int32 fs){
 	free(v2);
 	free(scratch);
 	free(cohX);
-	
-	return;
 }	
