@@ -4,7 +4,7 @@
 
 #define lambda_x 0.68
 #define epsilon 10^(-12)
-#define negImag_ConsFilter 0.05
+#define newImag_ConsFilter 0.05
 
 void COH_RealImag(Int32* x1, Int32* x2, Int32 fs){
 	Int32 i; /*Iteration values*/
@@ -15,7 +15,7 @@ void COH_RealImag(Int32* x1, Int32* x2, Int32 fs){
 	complex* PX1X2;
 	complex *v1; complex *v2; complex *scratch;
 	complex * cohX;
-	float * reCOH; float* imCOH; float *G1; float *G2; float *G; float* H1;
+	float * reCOH; float* imCOH;
 	
 	frameLength = (Int32)floor(fs*15/(float)1000);
 	if((frameLength/(float)2) != floor((frameLength/(float)2))){
@@ -86,27 +86,7 @@ void COH_RealImag(Int32* x1, Int32* x2, Int32 fs){
 		}
 		for(i =0;i<frameLength;i++){
 			cohX[i].real = PX1X2[i].real / (float)(PX1X1[i]*PX2X2[i]);
-			cohX[i].imag = PX1X2[i].imag / (float)(PX1X1[i] * PX2X2[i]);
+			cohX[i].imag = PX1X2[i].imag/ (float)(PX1X1[i] * PX2X2[i]);
 		}
-		for(i=2;i<=FFT_LEN/2+1;i++){
-			reCOH[i-2] = cohX[i].real;
-			imCOH[i-2] = cohX[i].imag;
-		}
-		for(i=0;i<FFT_LEN/2;i++){
-			G1 = 1 - (float)abs(reCOH[i])*P[i];
-		}
-		G2 = ones(FFT_LEN/2);
-		for(i=0;i<FFT_LEN/2;i++){
-			if(imCOH[i]<limNeg[i]){
-				G2[i] = negImag_ConsFilter;
-			}
-		}
-		for(i=0;i<FFT_LEN/2;i++){
-			G[i] = G1[i] * G2[i];
-		}
-		H1 = flipud(G);
-		
-		iniFrameSample+=frameShift;
-		endFrameSample += frameShift;
 	}
 }	

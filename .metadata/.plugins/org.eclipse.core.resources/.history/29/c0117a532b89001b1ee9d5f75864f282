@@ -11,11 +11,10 @@ CG_TOOL_ROOT := E:/Software/Code Composer Studio/ccsv4/tools/compiler/c5500
 ORDERED_OBJS += \
 $(GEN_CMDS_QUOTED) \
 "./main.obj" \
-"./audio_playback.obj" \
-"./aic3204_test.obj" \
-"./Hanning.obj" \
-"./FFT.obj" \
-"./Coherence.obj" \
+"./functions.obj" \
+"./fft.obj" \
+"./conf.obj" \
+"./coherence.obj" \
 -l"libc.a" \
 -l"E:\Software\Code Composer Studio\ccsv4\tools\compiler\c5500\lib\rts55x.lib" \
 -l"E:\Software\Code Composer Studio\ccsv4\emulation\boards\ezdsp5535_v1\lib\ezdsp5535bsl.lib" \
@@ -129,8 +128,8 @@ CoherenceTesting.out: $(OBJS) $(CMD_SRCS) $(GEN_CMDS)
 # Other Targets
 clean:
 	-$(RM) $(C5500_EXECUTABLE_OUTPUTS__QTD) "CoherenceTesting.out"
-	-$(RM) ".\Coherence.obj" ".\FFT.obj" ".\Hanning.obj" ".\aic3204_test.obj" ".\audio_playback.obj" ".\main.obj" 
-	-$(RM) ".\Coherence.pp" ".\FFT.pp" ".\Hanning.pp" ".\aic3204_test.pp" ".\audio_playback.pp" ".\main.pp" 
+	-$(RM) ".\coherence.obj" ".\conf.obj" ".\fft.obj" ".\functions.obj" ".\main.obj" 
+	-$(RM) ".\coherence.pp" ".\conf.pp" ".\fft.pp" ".\functions.pp" ".\main.pp" 
 	-@echo ' '
 
 .PHONY: all clean dependents

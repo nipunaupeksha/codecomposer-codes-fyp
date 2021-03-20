@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<workbench progressCount="39" version="2.0">
+<workbench progressCount="56" version="2.0">
 <workbenchAdvisor/>
-<window height="768" maximized="true" width="925" x="904" y="0">
+<window height="1036" maximized="true" width="997" x="728" y="0">
 <fastViewData fastViewLocation="1024">
 <orientation position="512" view="org.eclipse.cdt.ui.CView"/>
 <orientation position="512" view="com.ti.ccstudio.system.setup.ui.views.TargetConfigurationView"/>
@@ -38,39 +38,31 @@
 <part id="1"/>
 <part id="2"/>
 <part id="3"/>
-<part id="4"/>
-<part id="5"/>
 </presentation>
 </folder>
 </info>
 </editorArea>
-<editor id="com.ti.common.ui.cmdFileEditor" name="lnkx.cmd" partName="lnkx.cmd" path="E:/Projects/FYP/CodeComposer/CoherenceTesting/lnkx.cmd" title="lnkx.cmd" tooltip="CoherenceTesting/lnkx.cmd" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/CoherenceTesting/lnkx.cmd"/>
-</editor>
 <editor id="org.eclipse.cdt.ui.editor.CEditor" name="main.c" partName="main.c" path="E:/Projects/FYP/CodeComposer/CoherenceTesting/main.c" title="main.c" tooltip="CoherenceTesting/main.c" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/CoherenceTesting/main.c"/>
 </editor>
-<editor id="org.eclipse.cdt.ui.editor.CEditor" name="audio_playback.c" partName="audio_playback.c" path="E:/Projects/FYP/CodeComposer/CoherenceTesting/audio_playback.c" title="audio_playback.c" tooltip="CoherenceTesting/audio_playback.c" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/CoherenceTesting/audio_playback.c"/>
+<editor activePart="true" focus="true" id="org.eclipse.cdt.ui.editor.CEditor" name="coherence.c" partName="coherence.c" path="E:/Projects/FYP/CodeComposer/CoherenceTesting/coherence.c" title="coherence.c" tooltip="CoherenceTesting/coherence.c" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/CoherenceTesting/coherence.c"/>
 </editor>
-<editor id="org.eclipse.cdt.ui.editor.CEditor" name="aic3204_test.c" partName="aic3204_test.c" path="E:/Projects/FYP/CodeComposer/CoherenceTesting/aic3204_test.c" title="aic3204_test.c" tooltip="CoherenceTesting/aic3204_test.c" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/CoherenceTesting/aic3204_test.c"/>
-</editor>
-<editor activePart="true" focus="true" id="org.eclipse.cdt.ui.editor.CEditor" name="Coherence.c" partName="Coherence.c" path="E:/Projects/FYP/CodeComposer/CoherenceTesting/Coherence.c" title="Coherence.c" tooltip="CoherenceTesting/Coherence.c" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/CoherenceTesting/Coherence.c"/>
+<editor id="org.eclipse.cdt.ui.editor.CEditor" name="functions.c" partName="functions.c" path="E:/Projects/FYP/CodeComposer/CoherenceTesting/functions.c" title="functions.c" tooltip="CoherenceTesting/functions.c" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/CoherenceTesting/functions.c"/>
 </editor>
 </editors>
 <views>
 <view id="com.ti.ccstudio.debug.registers.ui.Expressions" partName="Watch (1)">
 <viewState StatesFile="E:/Projects/FYP/CodeComposer/.metadata/.plugins/com.ti.ccstudio.debug.registers.ui/expressions.xml" columnName.0="Name" columnName.1="Value" columnName.2="Address" columnName.3="Type" columnName.4="Format" columnWidth.0="150" columnWidth.1="150" columnWidth.2="150" columnWidth.3="150" columnWidth.4="80" numberOfVisibleColumns="5"/>
 </view>
-<view id="org.eclipse.ui.console.ConsoleView" partName="Console">
-<viewState/>
-</view>
 <view id="org.eclipse.ui.cheatsheets.views.CheatSheetView" partName="Cheat Sheets">
 <viewState>
 <cheatSheetMemento id="com.ti.ccstudio.ui.cheatsheets.first.terminate"/>
 </viewState>
+</view>
+<view id="org.eclipse.ui.console.ConsoleView" partName="Console">
+<viewState/>
 </view>
 <view id="org.eclipse.ui.views.ContentOutline" partName="Outline">
 <viewState/>
@@ -110,7 +102,7 @@
 <viewState/>
 </view>
 <view id="org.eclipse.ui.views.ProblemView" partName="Problems">
-<viewState columnWidth0="686" columnWidth1="150" columnWidth2="162" columnWidth3="72" columnWidth4="0" horizontalPosition="0" verticalPosition="0">
+<viewState columnWidth0="821" columnWidth1="153" columnWidth2="165" columnWidth3="75" columnWidth4="0" horizontalPosition="0" verticalPosition="0">
 <columnOrder columnOrderIndex="0"/>
 <columnOrder columnOrderIndex="1"/>
 <columnOrder columnOrderIndex="2"/>
@@ -196,7 +188,7 @@
 </presentation>
 </folder>
 </info>
-<info folder="true" part="org.eclipse.ui.internal.ViewStack@e11c32" ratio="0.7076923" ratioLeft="644" ratioRight="266" relationship="4" relative="topLeft">
+<info folder="true" part="org.eclipse.ui.internal.ViewStack@e11c32" ratio="0.6318681" ratioLeft="575" ratioRight="335" relationship="4" relative="topLeft">
 <folder activePageID="org.eclipse.ui.views.ProblemView" appearance="2" expanded="2">
 <page content="org.eclipse.ui.views.ProblemView" label="Problems"/>
 <presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
@@ -212,8 +204,8 @@
 <presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory"/>
 </folder>
 </info>
-<info part="org.eclipse.ui.editorss" ratio="0.23521851" ratioLeft="183" ratioRight="595" relationship="2" relative="topLeft"/>
-<info folder="true" part="topRight" ratio="0.8502825" ratioLeft="602" ratioRight="106" relationship="2" relative="org.eclipse.ui.editorss">
+<info part="org.eclipse.ui.editorss" ratio="0.26397514" ratioLeft="255" ratioRight="711" relationship="2" relative="topLeft"/>
+<info folder="true" part="topRight" ratio="0.86392814" ratioLeft="673" ratioRight="106" relationship="2" relative="org.eclipse.ui.editorss">
 <folder activePageID="org.eclipse.ui.views.ContentOutline" appearance="2" expanded="2">
 <page content="org.eclipse.ui.views.ContentOutline" label="Outline"/>
 <presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
@@ -221,7 +213,7 @@
 </presentation>
 </folder>
 </info>
-<info folder="true" part="org.eclipse.ui.internal.ViewStack@39137" ratio="0.9131737" ratioLeft="305" ratioRight="29" relationship="4" relative="org.eclipse.ui.editorss">
+<info folder="true" part="org.eclipse.ui.internal.ViewStack@39137" ratio="0.9669704" ratioLeft="849" ratioRight="29" relationship="4" relative="org.eclipse.ui.editorss">
 <folder activePageID="org.eclipse.ui.console.ConsoleView" appearance="2" expanded="2">
 <page content="org.eclipse.ui.console.ConsoleView" label="Console"/>
 <presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
@@ -357,172 +349,156 @@
 <workingSets/>
 <navigationHistory>
 <editors>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/BlinkingLED/blink_led.c"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/BlinkingLED/main.c"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.ti.common.ui.cmdFileEditor" path="/BlinkingLED/lnkx.cmd"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/BlinkingLED/main.c"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.ti.common.ui.cmdFileEditor" path="/BlinkingLED/lnkx.cmd"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.ti.common.ui.cmdFileEditor" path="/CoherenceTesting/lnkx.cmd"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/CoherenceTesting/functions.c"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/CoherenceTesting/functions.h"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/CoherenceTesting/coherence.c"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/CoherenceTesting/main.cpp"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/FFT/main.cpp"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/FFT/conf.c"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/FFT/main.c"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/FFT/tms320.h"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/FFT/conf.h"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/FFT/dsplib.h"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.ti.common.ui.cmdFileEditor" path="/BlinkingLED/lnkx.cmd"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.ti.common.ui.cmdFileEditor" path="/AudioPlayback/lnkx.cmd"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/AudioPlayback/aic3204_test.c"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/AudioPlayback/main.c"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/AudioPlayback/audio_playback.c"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.ti.common.ui.cmdFileEditor" path="/CoherenceTesting/lnkx.cmd"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/CoherenceTesting/main.c"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/CoherenceTesting/audio_playback.c"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/CoherenceTesting/aic3204_test.c"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/CoherenceTesting/Hanning.c"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/CoherenceTesting/Coherence.c"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/CoherenceTesting/main.c"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/CoherenceTesting/functions.c"/>
 </editors>
-<item historyLabel="lnkx.cmd" index="2">
+<item historyLabel="functions.c" index="0">
+<position info="not_deleted" x="62" y="0"/>
+</item>
+<item historyLabel="functions.h" index="1">
 <position/>
 </item>
-<item historyLabel="blink_led.c" index="0">
-<position info="not_deleted" x="655" y="0"/>
+<item historyLabel="functions.c" index="0">
+<position info="not_deleted" x="319" y="23"/>
 </item>
-<item historyLabel="main.c" index="1">
-<position info="not_deleted" x="137" y="0"/>
+<item historyLabel="functions.h" index="1">
+<position info="not_deleted" x="94" y="0"/>
 </item>
-<item historyLabel="blink_led.c" index="0">
+<item historyLabel="functions.c" index="0">
+<position info="not_deleted" x="62" y="0"/>
+</item>
+<item historyLabel="coherence.c" index="2">
+<position info="not_deleted" x="60" y="0"/>
+</item>
+<item historyLabel="functions.c" index="0">
+<position info="not_deleted" x="62" y="0"/>
+</item>
+<item historyLabel="coherence.c" index="2">
+<position info="not_deleted" x="60" y="0"/>
+</item>
+<item historyLabel="functions.c" index="0">
+<position info="not_deleted" x="62" y="0"/>
+</item>
+<item historyLabel="audio_playback.c" index="3">
 <position/>
 </item>
-<item historyLabel="main.c" index="3">
-<position info="not_deleted" x="75" y="0"/>
+<item historyLabel="functions.c" index="0">
+<position info="not_deleted" x="62" y="0"/>
 </item>
-<item historyLabel="lnkx.cmd" index="4">
+<item historyLabel="main.c" index="4">
+<position info="not_deleted" x="150" y="0"/>
+</item>
+<item historyLabel="coherence.c" index="2">
 <position/>
 </item>
-<item historyLabel="lnkx.cmd" index="5">
+<item historyLabel="main.c" index="4">
+<position info="not_deleted" x="150" y="0"/>
+</item>
+<item historyLabel="coherence.c" index="2">
+<position info="not_deleted" x="37" y="0"/>
+</item>
+<item historyLabel="main.c" index="4">
+<position info="not_deleted" x="150" y="0"/>
+</item>
+<item historyLabel="coherence.c" index="2">
+<position info="not_deleted" x="968" y="1"/>
+</item>
+<item historyLabel="functions.c" index="5">
 <position/>
 </item>
-<item historyLabel="lnkx.cmd" index="4">
+<item historyLabel="coherence.c" index="2">
+<position info="not_deleted" x="49" y="6"/>
+</item>
+<item historyLabel="coherence.c" index="2">
+<position info="not_deleted" x="803" y="0"/>
+</item>
+<item historyLabel="functions.c" index="5">
 <position/>
 </item>
-<item historyLabel="coherence.c" index="6">
+<item historyLabel="coherence.c" index="2">
+<position info="not_deleted" x="803" y="0"/>
+</item>
+<item historyLabel="functions.c" index="5">
 <position/>
 </item>
-<item historyLabel="main.cpp" index="7">
+<item historyLabel="coherence.c" index="2">
+<position info="not_deleted" x="765" y="0"/>
+</item>
+<item historyLabel="functions.c" index="5">
 <position/>
 </item>
-<item historyLabel="main.cpp" index="8">
+<item historyLabel="coherence.c" index="2">
+<position info="not_deleted" x="765" y="0"/>
+</item>
+<item historyLabel="functions.c" index="5">
 <position/>
 </item>
-<item historyLabel="conf.c" index="9">
+<item historyLabel="coherence.c" index="2">
+<position info="not_deleted" x="752" y="0"/>
+</item>
+<item historyLabel="functions.c" index="5">
 <position/>
 </item>
-<item historyLabel="main.c" index="10">
+<item historyLabel="coherence.c" index="2">
+<position info="not_deleted" x="752" y="0"/>
+</item>
+<item historyLabel="functions.c" index="5">
 <position/>
 </item>
-<item historyLabel="tms320.h" index="11">
+<item historyLabel="coherence.c" index="2">
+<position info="not_deleted" x="324" y="0"/>
+</item>
+<item historyLabel="functions.c" index="5">
 <position/>
 </item>
-<item historyLabel="conf.h" index="12">
+<item historyLabel="coherence.c" index="2">
+<position info="not_deleted" x="829" y="0"/>
+</item>
+<item historyLabel="functions.c" index="5">
 <position/>
 </item>
-<item historyLabel="dsplib.h" index="13">
-<position/>
+<item historyLabel="coherence.c" index="2">
+<position info="not_deleted" x="1263" y="0"/>
 </item>
-<item historyLabel="tms320.h" index="11">
-<position info="not_deleted" x="3330" y="0"/>
+<item historyLabel="functions.c" index="5">
+<position info="not_deleted" x="1556" y="0"/>
 </item>
-<item historyLabel="main.c" index="10">
-<position info="not_deleted" x="1185" y="0"/>
+<item historyLabel="coherence.c" index="2">
+<position info="not_deleted" x="1263" y="0"/>
 </item>
-<item historyLabel="lnkx.cmd" index="14">
-<position/>
+<item historyLabel="functions.c" index="5">
+<position info="not_deleted" x="406" y="0"/>
 </item>
-<item historyLabel="lnkx.cmd" index="15">
-<position/>
+<item historyLabel="coherence.c" index="2">
+<position info="not_deleted" x="1069" y="0"/>
 </item>
-<item historyLabel="aic3204_test.c" index="16">
-<position/>
+<item historyLabel="functions.c" index="5">
+<position info="not_deleted" x="463" y="0"/>
 </item>
-<item historyLabel="main.c" index="17">
-<position/>
+<item historyLabel="coherence.c" index="2">
+<position info="not_deleted" x="1069" y="0"/>
 </item>
-<item historyLabel="audio_playback.c" index="18">
-<position/>
+<item historyLabel="functions.c" index="5">
+<position info="not_deleted" x="366" y="0"/>
 </item>
-<item historyLabel="aic3204_test.c" index="16">
-<position info="not_deleted" x="4111" y="0"/>
+<item historyLabel="coherence.c" index="2">
+<position info="not_deleted" x="1263" y="0"/>
 </item>
-<item historyLabel="audio_playback.c" index="18">
-<position info="not_deleted" x="4274" y="0"/>
+<item historyLabel="functions.c" index="5">
+<position info="not_deleted" x="536" y="0"/>
 </item>
-<item historyLabel="lnkx.cmd" index="19">
-<position/>
+<item historyLabel="coherence.c" index="2">
+<position info="not_deleted" x="1263" y="0"/>
 </item>
-<item historyLabel="main.c" index="20">
-<position/>
+<item historyLabel="coherence.c" index="2">
+<position info="not_deleted" x="536" y="0"/>
 </item>
-<item historyLabel="audio_playback.c" index="21">
-<position/>
-</item>
-<item historyLabel="aic3204_test.c" index="22">
-<position/>
-</item>
-<item historyLabel="audio_playback.c" index="21">
-<position/>
-</item>
-<item historyLabel="aic3204_test.c" index="22">
-<position/>
-</item>
-<item historyLabel="audio_playback.c" index="21">
-<position/>
-</item>
-<item historyLabel="Hanning.c" index="23">
-<position/>
-</item>
-<item historyLabel="audio_playback.c" index="21">
-<position/>
-</item>
-<item historyLabel="Hanning.c" index="23">
-<position/>
-</item>
-<item historyLabel="Coherence.c" index="24">
-<position/>
-</item>
-<item historyLabel="Hanning.c" index="23">
-<position info="not_deleted" x="0" y="0"/>
-</item>
-<item historyLabel="Coherence.c" index="24">
-<position info="not_deleted" x="18" y="0"/>
-</item>
-<item historyLabel="audio_playback.c" index="21">
-<position/>
-</item>
-<item historyLabel="Coherence.c" index="24">
-<position info="not_deleted" x="1770" y="0"/>
-</item>
-<item historyLabel="Hanning.c" index="23">
-<position info="not_deleted" x="0" y="0"/>
-</item>
-<item historyLabel="Coherence.c" index="24">
-<position info="not_deleted" x="1770" y="0"/>
-</item>
-<item historyLabel="Coherence.c" index="24">
-<position info="not_deleted" x="237" y="0"/>
-</item>
-<item historyLabel="Coherence.c" index="24">
-<position info="not_deleted" x="30" y="6"/>
-</item>
-<item historyLabel="Coherence.c" index="24">
-<position info="not_deleted" x="1143" y="0"/>
-</item>
-<item historyLabel="Coherence.c" index="24">
-<position info="not_deleted" x="1016" y="0"/>
-</item>
-<item active="true" historyLabel="Coherence.c" index="24">
-<position info="not_deleted" x="1016" y="0"/>
+<item active="true" historyLabel="coherence.c" index="2">
+<position info="not_deleted" x="316" y="64"/>
 </item>
 </navigationHistory>
 <stickyState>
@@ -551,11 +527,35 @@
 </trimLayout>
 </window>
 <mruList>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="Coherence.c" tooltip="CoherenceTesting/Coherence.c">
-<persistable path="/CoherenceTesting/Coherence.c"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="functions.c" tooltip="CoherenceTesting/functions.c">
+<persistable path="/CoherenceTesting/functions.c"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="coherence.c" tooltip="CoherenceTesting/coherence.c">
+<persistable path="/CoherenceTesting/coherence.c"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="functions.h" tooltip="CoherenceTesting/functions.h">
+<persistable path="/CoherenceTesting/functions.h"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="conf.c" tooltip="CoherenceTesting/conf.c">
+<persistable path="/CoherenceTesting/conf.c"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="fft.c" tooltip="CoherenceTesting/fft.c">
+<persistable path="/CoherenceTesting/fft.c"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="tms320.h" tooltip="CoherenceTesting/tms320.h">
+<persistable path="/CoherenceTesting/tms320.h"/>
 </file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="Hanning.c" tooltip="CoherenceTesting/Hanning.c">
 <persistable path="/CoherenceTesting/Hanning.c"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="FFT.c" tooltip="CoherenceTesting/FFT.c">
+<persistable path="/CoherenceTesting/FFT.c"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="conf.h" tooltip="CoherenceTesting/conf.h">
+<persistable path="/CoherenceTesting/conf.h"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="Coherence.c" tooltip="CoherenceTesting/Coherence.c">
+<persistable path="/CoherenceTesting/Coherence.c"/>
 </file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="aic3204_test.c" tooltip="CoherenceTesting/aic3204_test.c">
 <persistable path="/CoherenceTesting/aic3204_test.c"/>
@@ -568,30 +568,6 @@
 </file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.ti.common.ui.cmdFileEditor" name="lnkx.cmd" tooltip="CoherenceTesting/lnkx.cmd">
 <persistable path="/CoherenceTesting/lnkx.cmd"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="audio_playback.c" tooltip="AudioPlayback/audio_playback.c">
-<persistable path="/AudioPlayback/audio_playback.c"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="main.c" tooltip="AudioPlayback/main.c">
-<persistable path="/AudioPlayback/main.c"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="aic3204_test.c" tooltip="AudioPlayback/aic3204_test.c">
-<persistable path="/AudioPlayback/aic3204_test.c"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.ti.common.ui.cmdFileEditor" name="lnkx.cmd" tooltip="AudioPlayback/lnkx.cmd">
-<persistable path="/AudioPlayback/lnkx.cmd"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="dsplib.h" tooltip="FFT/dsplib.h">
-<persistable path="/FFT/dsplib.h"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="conf.h" tooltip="FFT/conf.h">
-<persistable path="/FFT/conf.h"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="tms320.h" tooltip="FFT/tms320.h">
-<persistable path="/FFT/tms320.h"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="main.c" tooltip="FFT/main.c">
-<persistable path="/FFT/main.c"/>
 </file>
 </mruList>
 </workbench>

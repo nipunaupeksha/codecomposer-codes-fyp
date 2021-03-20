@@ -15,7 +15,7 @@ void COH_RealImag(Int32* x1, Int32* x2, Int32 fs){
 	complex* PX1X2;
 	complex *v1; complex *v2; complex *scratch;
 	complex * cohX;
-	float * reCOH; float* imCOH; float *G1; float *G2; float *G; float* H1;
+	float * reCOH; float* imCOH; float *G1; float *G2; float *G; float* H;
 	
 	frameLength = (Int32)floor(fs*15/(float)1000);
 	if((frameLength/(float)2) != floor((frameLength/(float)2))){
@@ -104,9 +104,5 @@ void COH_RealImag(Int32* x1, Int32* x2, Int32 fs){
 		for(i=0;i<FFT_LEN/2;i++){
 			G[i] = G1[i] * G2[i];
 		}
-		H1 = flipud(G);
-		
-		iniFrameSample+=frameShift;
-		endFrameSample += frameShift;
 	}
 }	
