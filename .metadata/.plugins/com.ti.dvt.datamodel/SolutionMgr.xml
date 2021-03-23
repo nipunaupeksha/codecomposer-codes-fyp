@@ -8,9 +8,6 @@
    <void method="add"> 
     <string>E:/Software/Code Composer Studio/ccsv4/eclipse/..\dvt\RTA6\solutions\cce_rta6</string> 
    </void> 
-   <void method="add"> 
-    <string>/E:/Software/Code Composer Studio/ccsv4/eclipse/..\dvt\CodeGen\solutions\CodeGenCoverage</string> 
-   </void> 
   </void> 
  </object> 
 </java> 
