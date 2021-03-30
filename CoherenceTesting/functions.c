@@ -36,8 +36,11 @@ float* zeros(Int32 N){
 *    1D Vector
 ************************************************/
 float* ones(Int32 N){
+	int i; //iterator
 	float* o = (float*) malloc(N * sizeof(float));
-	memset(o, 1, N*sizeof(float));
+	for(i-0;i<N;i++){
+		o[i] = 1;
+	}
 	return o;
 }
 

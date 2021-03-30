@@ -10,7 +10,7 @@
  * fs : Sampling frequency
  * 
  * */
-void COH_RealImag(Int32* x1, Int32* x2, Int32 fs){
+void COH_RealImag(double* x1, double* x2, Int32 fs){
 	Int32 i; /*Iteration values*/
 	Int32 frameLength, frameShift, FFT_LEN, lenS, nFrame, iniFrameSample, endFrameSample;
 	float band1;
@@ -20,7 +20,7 @@ void COH_RealImag(Int32* x1, Int32* x2, Int32 fs){
 	complex* PX1X2; complex* v1; complex* v2; complex* scratch; complex* cohX; complex* enhSpeech_Frame; 
 	
 	
-	frameLength = (Int32)floor(fs*15/(float)1000);
+	frameLength = (Int32)floor(fs*20/(float)1000);
 	if((frameLength/(float)2) != floor((frameLength/(float)2))){
 		frameLength += 1;
 	}
@@ -31,16 +31,22 @@ void COH_RealImag(Int32* x1, Int32* x2, Int32 fs){
 	frameShift = (Int32)floor(frameLength * 0.5);
 	window = hanning(frameLength);
 	FFT_LEN = (Int32)exp2(frameLength);
+	
 	lenS = min((*(&x1+1)-x1),(*(&x2+1)-x2));
 	nFrame = 0;
 	iniFrameSample = 1; //or 0?
 	endFrameSample = iniFrameSample + frameLength -1;
 	enhanced_output = zeros(lenS);
+	
+	//defining bands
 	band1 = floor(1000*FFT_LEN/(float)fs); /*0 -> 1 kHz*/
 	/*Defining exponents of coherence function*/
+	
 	P = zeros(FFT_LEN/2);
 	/*Defining thresholds for imaginary parts to consider negative(noise)*/
+	
 	limNeg = zeros(FFT_LEN/2);
+	
 	for(i=0;i<band1;i++){
 		P[i] = 16;
 		limNeg[i] = -0.1;
@@ -50,8 +56,21 @@ void COH_RealImag(Int32* x1, Int32* x2, Int32 fs){
 		limNeg[i] = -0.3;
 	}
 	
+	//set sizes of arrays for processing
+	Frame1 = (float*)calloc(frameLength,sizeof(float));
+	Frame2 = (float*)calloc(frameLength,sizeof(float));
+	
+	wFrame1 = (float*)calloc(frameLength,sizeof(float));
+	wFrame2 = (float*)calloc(frameLength,sizeof(float));
+	
+	v1 = (complex*)calloc(frameLength, sizeof(complex));
+	v2 = (complex*)calloc(frameLength, sizeof(complex));
+	
+	
+	
 	while(endFrameSample<lenS){
 		nFrame += 1;/*A new frame to process*/
+		
 		/*Get short-time magnitude and phase spectrum for each input channel*/
 		for(i=0;i<frameLength;i++){
     		Frame1[i] = x1[iniFrameSample+i];

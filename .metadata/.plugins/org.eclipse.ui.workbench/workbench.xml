@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <workbench progressCount="56" version="2.0">
 <workbenchAdvisor/>
-<window height="1036" maximized="true" width="997" x="915" y="2">
+<window height="1036" width="1053" x="859" y="2">
 <fastViewData fastViewLocation="1024">
 <orientation position="512" view="org.eclipse.cdt.ui.CView"/>
 <orientation position="512" view="com.ti.ccstudio.system.setup.ui.views.TargetConfigurationView"/>
@@ -43,7 +43,6 @@
 <part id="5"/>
 <part id="6"/>
 <part id="7"/>
-<part id="8"/>
 </presentation>
 </folder>
 </info>
@@ -51,10 +50,7 @@
 <editor id="org.eclipse.cdt.ui.editor.CEditor" name="main.c" partName="main.c" path="E:/Projects/FYP/CodeComposer/CoherenceTesting/main.c" title="main.c" tooltip="CoherenceTesting/main.c" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/CoherenceTesting/main.c"/>
 </editor>
-<editor activePart="true" focus="true" id="org.eclipse.cdt.ui.editor.CEditor" name="coherence.c" partName="coherence.c" path="E:/Projects/FYP/CodeComposer/CoherenceTesting/coherence.c" title="coherence.c" tooltip="CoherenceTesting/coherence.c" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/CoherenceTesting/coherence.c"/>
-</editor>
-<editor id="org.eclipse.cdt.ui.editor.CEditor" name="fft.c" partName="fft.c" path="E:/Projects/FYP/CodeComposer/CoherenceTesting/fft.c" title="fft.c" tooltip="CoherenceTesting/fft.c" workbook="DefaultEditorWorkbook">
+<editor focus="true" id="org.eclipse.cdt.ui.editor.CEditor" name="fft.c" partName="fft.c" path="E:/Projects/FYP/CodeComposer/CoherenceTesting/fft.c" title="fft.c" tooltip="CoherenceTesting/fft.c" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/CoherenceTesting/fft.c"/>
 </editor>
 <editor id="org.eclipse.cdt.ui.editor.CEditor" name="conf.h" partName="conf.h" path="E:/Projects/FYP/CodeComposer/CoherenceTesting/conf.h" title="conf.h" tooltip="CoherenceTesting/conf.h" workbook="DefaultEditorWorkbook">
@@ -62,9 +58,6 @@
 </editor>
 <editor id="org.eclipse.cdt.ui.editor.CEditor" name="functions.c" partName="functions.c" path="E:/Projects/FYP/CodeComposer/CoherenceTesting/functions.c" title="functions.c" tooltip="CoherenceTesting/functions.c" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/CoherenceTesting/functions.c"/>
-</editor>
-<editor id="org.eclipse.cdt.ui.editor.CEditor" name="adaptiveFilter.c" partName="adaptiveFilter.c" path="E:/Projects/FYP/CodeComposer/CoherenceTesting/adaptiveFilter.c" title="adaptiveFilter.c" tooltip="CoherenceTesting/adaptiveFilter.c" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/CoherenceTesting/adaptiveFilter.c"/>
 </editor>
 <editor id="org.eclipse.cdt.ui.editor.CEditor" name="fir.c" partName="fir.c" path="E:/Projects/FYP/CodeComposer/CoherenceTesting/fir.c" title="fir.c" tooltip="CoherenceTesting/fir.c" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/CoherenceTesting/fir.c"/>
@@ -74,6 +67,9 @@
 </editor>
 <editor id="org.eclipse.cdt.ui.editor.CEditor" name="conf.c" partName="conf.c" path="E:/Projects/FYP/CodeComposer/CoherenceTesting/conf.c" title="conf.c" tooltip="CoherenceTesting/conf.c" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/CoherenceTesting/conf.c"/>
+</editor>
+<editor id="org.eclipse.cdt.ui.editor.CEditor" name="coherence.c" partName="coherence.c" path="E:/Projects/FYP/CodeComposer/CoherenceTesting/coherence.c" title="coherence.c" tooltip="CoherenceTesting/coherence.c" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/CoherenceTesting/coherence.c"/>
 </editor>
 </editors>
 <views>
@@ -95,9 +91,10 @@
 <viewState horizontalPosition="0" verticalPosition="0">
 <expanded>
 <element path="E:\Projects\FYP\CodeComposer\CoherenceTesting"/>
+<element path="E:\Projects\FYP\CodeComposer\CoherenceTesting\Debug"/>
 </expanded>
 <selection>
-<element path="E:/Projects/FYP/CodeComposer/CoherenceTesting/conf.h"/>
+<element path="E:/Projects/FYP/CodeComposer/CoherenceTesting"/>
 </selection>
 <customFilters userDefinedPatternsEnabled="false">
 <xmlDefinedFilters>
@@ -126,7 +123,7 @@
 <viewState/>
 </view>
 <view id="org.eclipse.ui.views.ProblemView" partName="Problems">
-<viewState columnWidth0="836" columnWidth1="168" columnWidth2="180" columnWidth3="90" columnWidth4="0" horizontalPosition="0" verticalPosition="0">
+<viewState columnWidth0="839" columnWidth1="171" columnWidth2="183" columnWidth3="93" columnWidth4="0" horizontalPosition="0" verticalPosition="0">
 <columnOrder columnOrderIndex="0"/>
 <columnOrder columnOrderIndex="1"/>
 <columnOrder columnOrderIndex="2"/>
@@ -135,7 +132,7 @@
 </viewState>
 </view>
 </views>
-<perspectives activePart="org.eclipse.cdt.ui.editor.CEditor" activePerspective="org.eclipse.cdt.ui.CPerspective">
+<perspectives activePart="org.eclipse.cdt.ui.CView" activePerspective="org.eclipse.cdt.ui.CPerspective">
 <perspective editorAreaVisible="1" fixed="0" version="0.016">
 <descriptor class="org.eclipse.cdt.internal.ui.CPerspectiveFactory" id="org.eclipse.cdt.ui.CPerspective" label="C/C++"/>
 <alwaysOnActionSet id="com.ti.ccstudio.debug.ui.licensing"/>
@@ -212,7 +209,7 @@
 </presentation>
 </folder>
 </info>
-<info folder="true" part="org.eclipse.ui.internal.ViewStack@e11c32" ratio="0.74835163" ratioLeft="681" ratioRight="229" relationship="4" relative="topLeft">
+<info folder="true" part="org.eclipse.ui.internal.ViewStack@e11c32" ratio="0.5824053" ratioLeft="523" ratioRight="375" relationship="4" relative="topLeft">
 <folder activePageID="org.eclipse.ui.views.ProblemView" appearance="2" expanded="2">
 <page content="org.eclipse.ui.views.ProblemView" label="Problems"/>
 <presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
@@ -228,8 +225,8 @@
 <presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory"/>
 </folder>
 </info>
-<info part="org.eclipse.ui.editorss" ratio="0.27372837" ratioLeft="522" ratioRight="1385" relationship="2" relative="topLeft"/>
-<info folder="true" part="topRight" ratio="0.8729017" ratioLeft="728" ratioRight="106" relationship="2" relative="org.eclipse.ui.editorss">
+<info part="org.eclipse.ui.editorss" ratio="0.28277886" ratioLeft="289" ratioRight="733" relationship="2" relative="topLeft"/>
+<info folder="true" part="topRight" ratio="0.8838992" ratioLeft="807" ratioRight="106" relationship="2" relative="org.eclipse.ui.editorss">
 <folder activePageID="org.eclipse.ui.views.ContentOutline" appearance="2" expanded="2">
 <page content="org.eclipse.ui.views.ContentOutline" label="Outline"/>
 <presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
@@ -374,11 +371,8 @@
 <navigationHistory>
 <editors>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/CoherenceTesting/coherence.c"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/CoherenceTesting/conf.h"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/CoherenceTesting/functions.c"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/CoherenceTesting/nlms.c"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/CoherenceTesting/adaptiveFilter.c"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/CoherenceTesting/coeff.h"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/CoherenceTesting/xcorr.c"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/CoherenceTesting/main.c"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/CoherenceTesting/coherence.c"/>
@@ -392,156 +386,161 @@
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/CoherenceTesting/functions.c"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/CoherenceTesting/coherence.c"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/CoherenceTesting/conf.c"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/CoherenceTesting/main.c"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/CoherenceTesting/functions.c"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/CoherenceTesting/conf.h"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/CoherenceTesting/adaptiveFilter.c"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/CoherenceTesting/fft.c"/>
 </editors>
-<item historyLabel="coherence.c" index="0">
-<position info="not_deleted" x="4712" y="0"/>
-</item>
-<item historyLabel="functions.c" index="2">
-<position info="not_deleted" x="3960" y="0"/>
-</item>
-<item historyLabel="coherence.c" index="0">
-<position info="not_deleted" x="1639" y="27"/>
-</item>
-<item historyLabel="functions.c" index="2">
-<position info="not_deleted" x="3960" y="0"/>
-</item>
-<item historyLabel="coherence.c" index="0">
-<position info="not_deleted" x="1639" y="27"/>
-</item>
-<item historyLabel="functions.c" index="2">
-<position info="not_deleted" x="3960" y="0"/>
-</item>
-<item historyLabel="functions.c" index="2">
-<position info="not_deleted" x="1898" y="0"/>
-</item>
-<item historyLabel="functions.c" index="2">
-<position info="not_deleted" x="1969" y="0"/>
-</item>
-<item historyLabel="coherence.c" index="0">
-<position info="not_deleted" x="1639" y="27"/>
-</item>
-<item historyLabel="functions.c" index="2">
-<position info="not_deleted" x="586" y="0"/>
-</item>
-<item historyLabel="conf.h" index="1">
-<position info="not_deleted" x="3617" y="0"/>
-</item>
-<item historyLabel="coherence.c" index="0">
-<position info="not_deleted" x="1666" y="0"/>
-</item>
-<item historyLabel="functions.c" index="2">
-<position info="not_deleted" x="707" y="0"/>
-</item>
-<item historyLabel="nlms.c" index="3">
-<position/>
-</item>
-<item historyLabel="functions.c" index="2">
-<position info="not_deleted" x="707" y="0"/>
-</item>
-<item historyLabel="adaptiveFilter.c" index="4">
-<position/>
-</item>
-<item historyLabel="functions.c" index="2">
-<position info="not_deleted" x="3958" y="0"/>
-</item>
-<item historyLabel="coeff.h" index="5">
-<position/>
-</item>
-<item historyLabel="functions.c" index="2">
-<position info="not_deleted" x="3958" y="0"/>
-</item>
-<item historyLabel="functions.c" index="2">
-<position info="not_deleted" x="3156" y="0"/>
-</item>
-<item historyLabel="functions.c" index="2">
+<item historyLabel="functions.c" index="1">
 <position info="not_deleted" x="116" y="6"/>
 </item>
-<item historyLabel="functions.c" index="2">
+<item historyLabel="functions.c" index="1">
 <position info="not_deleted" x="116" y="6"/>
 </item>
 <item historyLabel="coherence.c" index="0">
 <position info="not_deleted" x="1666" y="0"/>
 </item>
-<item historyLabel="adaptiveFilter.c" index="4">
+<item historyLabel="adaptiveFilter.c" index="2">
 <position info="not_deleted" x="141" y="0"/>
 </item>
 <item historyLabel="coherence.c" index="0">
 <position info="not_deleted" x="1666" y="0"/>
 </item>
-<item historyLabel="functions.c" index="2">
+<item historyLabel="functions.c" index="1">
 <position/>
 </item>
-<item historyLabel="xcorr.c" index="6">
+<item historyLabel="xcorr.c" index="3">
 <position/>
 </item>
-<item historyLabel="functions.c" index="2">
+<item historyLabel="functions.c" index="1">
 <position info="not_deleted" x="2414" y="0"/>
 </item>
-<item historyLabel="xcorr.c" index="6">
+<item historyLabel="xcorr.c" index="3">
 <position info="not_deleted" x="79" y="2"/>
 </item>
-<item historyLabel="functions.c" index="2">
+<item historyLabel="functions.c" index="1">
 <position info="not_deleted" x="2414" y="0"/>
 </item>
-<item historyLabel="main.c" index="7">
+<item historyLabel="main.c" index="4">
 <position/>
 </item>
-<item historyLabel="coherence.c" index="8">
+<item historyLabel="coherence.c" index="5">
 <position/>
 </item>
-<item historyLabel="functions.c" index="2">
+<item historyLabel="functions.c" index="1">
 <position/>
 </item>
-<item historyLabel="adaptiveFilter.c" index="9">
+<item historyLabel="adaptiveFilter.c" index="6">
 <position/>
 </item>
-<item historyLabel="fir.c" index="10">
+<item historyLabel="fir.c" index="7">
 <position/>
 </item>
-<item historyLabel="adaptiveFilter.c" index="11">
+<item historyLabel="adaptiveFilter.c" index="8">
 <position/>
 </item>
-<item historyLabel="frameSplit.c" index="12">
+<item historyLabel="frameSplit.c" index="9">
 <position/>
 </item>
-<item historyLabel="adaptiveFilter.c" index="13">
+<item historyLabel="adaptiveFilter.c" index="10">
 <position/>
 </item>
-<item historyLabel="fir.c" index="14">
+<item historyLabel="fir.c" index="11">
 <position/>
 </item>
-<item historyLabel="frameSplit.c" index="12">
+<item historyLabel="frameSplit.c" index="9">
 <position info="not_deleted" x="161" y="0"/>
 </item>
-<item historyLabel="conf.h" index="15">
+<item historyLabel="conf.h" index="12">
 <position/>
 </item>
-<item historyLabel="functions.c" index="16">
+<item historyLabel="functions.c" index="13">
 <position/>
 </item>
-<item historyLabel="coherence.c" index="17">
+<item historyLabel="coherence.c" index="14">
 <position/>
 </item>
-<item historyLabel="frameSplit.c" index="12">
+<item historyLabel="frameSplit.c" index="9">
 <position info="not_deleted" x="161" y="0"/>
 </item>
-<item historyLabel="conf.c" index="18">
+<item historyLabel="conf.c" index="15">
 <position/>
 </item>
-<item historyLabel="conf.h" index="15">
+<item historyLabel="conf.h" index="12">
 <position/>
 </item>
-<item historyLabel="coherence.c" index="17">
+<item historyLabel="coherence.c" index="14">
 <position info="not_deleted" x="544" y="0"/>
 </item>
-<item historyLabel="functions.c" index="16">
+<item historyLabel="functions.c" index="13">
 <position/>
 </item>
-<item historyLabel="conf.c" index="18">
+<item historyLabel="conf.c" index="15">
 <position info="not_deleted" x="614" y="0"/>
 </item>
-<item active="true" historyLabel="coherence.c" index="17">
-<position info="not_deleted" x="1195" y="31"/>
+<item historyLabel="coherence.c" index="14">
+<position/>
+</item>
+<item historyLabel="main.c" index="16">
+<position/>
+</item>
+<item historyLabel="coherence.c" index="14">
+<position/>
+</item>
+<item historyLabel="functions.c" index="17">
+<position/>
+</item>
+<item historyLabel="coherence.c" index="14">
+<position info="not_deleted" x="1066" y="0"/>
+</item>
+<item historyLabel="functions.c" index="17">
+<position info="not_deleted" x="941" y="0"/>
+</item>
+<item historyLabel="coherence.c" index="14">
+<position info="not_deleted" x="1147" y="0"/>
+</item>
+<item historyLabel="functions.c" index="17">
+<position info="not_deleted" x="1253" y="0"/>
+</item>
+<item historyLabel="conf.h" index="18">
+<position/>
+</item>
+<item historyLabel="functions.c" index="17">
+<position info="not_deleted" x="1253" y="0"/>
+</item>
+<item historyLabel="adaptiveFilter.c" index="19">
+<position/>
+</item>
+<item historyLabel="functions.c" index="17">
+<position info="not_deleted" x="1253" y="0"/>
+</item>
+<item historyLabel="coherence.c" index="14">
+<position info="not_deleted" x="2217" y="0"/>
+</item>
+<item historyLabel="fft.c" index="20">
+<position info="not_deleted" x="159" y="0"/>
+</item>
+<item historyLabel="coherence.c" index="14">
+<position info="not_deleted" x="2217" y="0"/>
+</item>
+<item historyLabel="conf.h" index="18">
+<position/>
+</item>
+<item historyLabel="coherence.c" index="14">
+<position info="not_deleted" x="1761" y="0"/>
+</item>
+<item historyLabel="fft.c" index="20">
+<position info="not_deleted" x="2010" y="0"/>
+</item>
+<item historyLabel="coherence.c" index="14">
+<position info="not_deleted" x="1761" y="0"/>
+</item>
+<item historyLabel="coherence.c" index="14">
+<position info="not_deleted" x="1155" y="0"/>
+</item>
+<item active="true" historyLabel="fft.c" index="20">
+<position info="not_deleted" x="2010" y="0"/>
 </item>
 </navigationHistory>
 <stickyState>
@@ -570,6 +569,9 @@
 </trimLayout>
 </window>
 <mruList>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="coherence.c" tooltip="CoherenceTesting/coherence.c">
+<persistable path="/CoherenceTesting/coherence.c"/>
+</file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="conf.c" tooltip="CoherenceTesting/conf.c">
 <persistable path="/CoherenceTesting/conf.c"/>
 </file>
@@ -596,9 +598,6 @@
 </file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="fft.c" tooltip="CoherenceTesting/fft.c">
 <persistable path="/CoherenceTesting/fft.c"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="coherence.c" tooltip="CoherenceTesting/coherence.c">
-<persistable path="/CoherenceTesting/coherence.c"/>
 </file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="functions.h" tooltip="CoherenceTesting/functions.h">
 <persistable path="/CoherenceTesting/functions.h"/>

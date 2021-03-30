@@ -8,10 +8,11 @@
 		<item key="wholeword" value="false"/>
 		<item key="incremental" value="false"/>
 		<item key="isRegEx" value="false"/>
-		<item key="selection" value="max"/>
+		<item key="selection" value="Frame1"/>
 		<item key="wrap" value="false"/>
 		<item key="casesensitive" value="false"/>
 		<list key="findhistory">
+			<item value="Frame1"/>
 			<item value="max"/>
 			<item value="enhanced_output"/>
 			<item value="sqrt"/>
@@ -19,7 +20,6 @@
 			<item value="powi"/>
 			<item value="log2"/>
 			<item value="min"/>
-			<item value="floor"/>
 		</list>
 		<list key="replacehistory">
 		</list>
