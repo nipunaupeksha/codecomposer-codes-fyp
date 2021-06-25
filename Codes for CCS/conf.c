@@ -196,6 +196,9 @@ unsigned long Sampling(unsigned long SamplingFrequency, unsigned long ADCgain){
     codec_rset( 9, 0x30 );   // Power up HPL,HPR
     codec_rset( 0, 0 );      // Select page 0
     wait( 100 );    // wait
+    /*Removing MICBIAS*/
+    codec_rset(0,1); //Select page 1
+    codec_rset(0x33,0);
     /* ADC ROUTING and Power Up */
     codec_rset( 0, 1 );      // Select page 1
     codec_rset( 0x34, 0x10 );// STEREO 1 Jack
