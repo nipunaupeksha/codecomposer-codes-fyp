@@ -1,1 +1,1 @@
-"../adaptiveFilter.c" "../coherence.c" "../conf.c" "../fft.c" "../fir.c" "../frameSplit.c" "../functions.c" "../main.c" "../xcorr.c" 
+"../aic3204.c" "../aic3204_init.c" "../coherence.c" "../ezdsp5535_aic3204_dma.c" "../frequencyshaper.c" "../functions.c" "../main.c" "../main_function.c" "../nlms.c" "../vad.c" 

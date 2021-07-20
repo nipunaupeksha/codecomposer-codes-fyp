@@ -8,18 +8,18 @@
 		<item key="wholeword" value="false"/>
 		<item key="incremental" value="false"/>
 		<item key="isRegEx" value="false"/>
-		<item key="selection" value="Frame1"/>
+		<item key="selection" value="MIC"/>
 		<item key="wrap" value="false"/>
 		<item key="casesensitive" value="false"/>
 		<list key="findhistory">
+			<item value="mic"/>
+			<item value="init_buffer"/>
+			<item value="flipud"/>
 			<item value="Frame1"/>
 			<item value="max"/>
 			<item value="enhanced_output"/>
 			<item value="sqrt"/>
 			<item value="pow"/>
-			<item value="powi"/>
-			<item value="log2"/>
-			<item value="min"/>
 		</list>
 		<list key="replacehistory">
 		</list>

@@ -1,0 +1,57 @@
+################################################################################
+# Automatically-generated file. Do not edit!
+################################################################################
+
+# Add inputs and outputs from these tool invocations to the build variables 
+C_SRCS += \
+../aic3204.c \
+../coherence.c \
+../conf.c \
+../ezdsp5535_aic3204_dma.c \
+../functions.c \
+../main.c 
+
+CMD_SRCS += \
+../lnkx.cmd 
+
+OBJS += \
+./aic3204.obj \
+./coherence.obj \
+./conf.obj \
+./ezdsp5535_aic3204_dma.obj \
+./functions.obj \
+./main.obj 
+
+C_DEPS += \
+./aic3204.pp \
+./coherence.pp \
+./conf.pp \
+./ezdsp5535_aic3204_dma.pp \
+./functions.pp \
+./main.pp 
+
+OBJS__QTD += \
+".\aic3204.obj" \
+".\coherence.obj" \
+".\conf.obj" \
+".\ezdsp5535_aic3204_dma.obj" \
+".\functions.obj" \
+".\main.obj" 
+
+C_DEPS__QTD += \
+".\aic3204.pp" \
+".\coherence.pp" \
+".\conf.pp" \
+".\ezdsp5535_aic3204_dma.pp" \
+".\functions.pp" \
+".\main.pp" 
+
+C_SRCS_QUOTED += \
+"../aic3204.c" \
+"../coherence.c" \
+"../conf.c" \
+"../ezdsp5535_aic3204_dma.c" \
+"../functions.c" \
+"../main.c" 
+
+

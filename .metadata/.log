@@ -392,3 +392,13 @@ org.eclipse.core.runtime.OperationCanceledException
 	at com.ti.ccstudio.debug.core.licensing.LicenseManager.acquireLicense(LicenseManager.java:65)
 	at com.ti.ccstudio.debug.ui.licensing.LicenseMonitor$1.run(LicenseMonitor.java:43)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:58)
+!SESSION 2021-07-14 12:57:14.573 -----------------------------------------------
+eclipse.buildId=4.2.4.00033
+java.version=1.5.0_14
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=en_US
+Command-line arguments:  -os win32 -ws win32 -arch x86
+
+!ENTRY com.ti.ccstudio.debug.core 4 0 2021-07-14 21:31:40.016
+!MESSAGE Fatal Error: C55xx: Error connecting to the target: (Error -151 @ 0x0) This utility failed to open the adapter for a custom emulator. The adapter returned an error. (Release 5.0.429.0) 
+
